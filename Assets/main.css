@@ -269,7 +269,7 @@
                     50% { opacity: 0; }
                   }
                   
-            .download-cv{
+            .container-cv{
                 position: absolute;
                 top: 0;
                 margin-top: 15rem;
