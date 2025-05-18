@@ -1359,7 +1359,7 @@
         .card {
             display: flex;
             flex-direction: column; 
-            min-width: 300px;
+            min-width: 320px;
             border: 4px solid rgba(247, 184, 229, 0.03);
             background: transparent;
             border-radius: 20px;
@@ -1419,8 +1419,8 @@
 
 
         .btn-demo{
-            margin-top: auto;
-            align-self: center;
+            margin-left: 3rem;
+            align-self: self-start;
             background-color: var(--header-bg-color);
             text-decoration: none;
             font-size: 0.9rem; 
@@ -1430,7 +1430,6 @@
             border-radius: 4rem;
             border: none;
             outline: none;
-            box-shadow: 0px 2px 8px rgba(255, 212, 241, 0.3);
             transition: all 0.3s ease-in-out;
             cursor: pointer; 
             height: auto; 
@@ -1441,6 +1440,32 @@
             transform: scale(1.1);
             color: var(--main-txt2-color);
         }
+
+        .btn-view{
+            margin-top: -2rem;
+            align-self: flex-end;
+            background-color: transparent !important;
+            text-decoration: none;
+            font-size: 0.9rem; 
+            font-weight: 500;
+            padding: 0.3rem 0.8rem;
+            margin-right: 2rem;
+            color: var(--main-txt-color) !important;
+            border-radius: 4rem;
+            border: none;
+            outline: none;
+            box-shadow: 0px 2px 8px rgba(255, 212, 241, 0.3);
+            transition: all 0.3s ease-in-out;
+            cursor: pointer; 
+            height: auto; 
+        }
+
+        .btn-view:hover{
+            background-color: #111111 !important;
+            transform: scale(1.1);
+            color: var(--main-txt2-color);
+        }
+        
 
         .prev-btn, .next-btn {
             font-size: 50px;
@@ -1616,7 +1641,8 @@
         .card-more{
             display: flex;
             width: 450px;
-            height: 250px;
+            height: 25
+            0px;
             border: 4px solid rgba(250, 149, 221, 0.03);
             background: transparent;
             border-radius: 20px;
