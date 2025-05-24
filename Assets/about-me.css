@@ -38,7 +38,7 @@
 
 
     .header{
-        position: relative;
+        position: sticky;
         height: 12%;
         width: 100%;
         padding: 1rem 10%;
@@ -56,7 +56,16 @@
         
     }
 
+    .logo-main {
+        display: flex;
+        
+       }
 
+       .logo-main img{
+        width: auto;
+        height: 125%;
+        margin-left: -5rem;
+       }
 
 
     /* Navbar  Start*/
@@ -76,13 +85,14 @@
 
     .nav-link {
         font-size: 1rem;
+        color: var(--main-txt-color) !important;
         display: inline-block;
         text-decoration: none;
-        color: var(--main-txt-color);
         list-style: none;
         margin: 0.5rem;
         
     }
+
 
 
     .nav-link.active,
@@ -441,14 +451,14 @@
 
 .footer-links-more ul {
     list-style: none;
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 9rem;
     margin-top: 2.5rem;
 }
 
 .footer-links-more ul li {
     display: inline-block;
-    margin: 8px 10px;
+    margin: 2px 5px;
     margin-top: -15px;
     
 }
