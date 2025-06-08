@@ -224,7 +224,7 @@
     color: var(--main-txt-color);
     margin-bottom: 4rem; 
     margin-top: -4rem;
-    margin-right: 12rem;
+    margin-right: 10rem;
     font-weight: bold;
     overflow: visible;
     }
@@ -241,7 +241,7 @@
         align-items: center; 
         flex-direction: column;
         max-width: 80%;
-        margin: auto;
+        margin-left: 10rem ;
         text-align: justify;
     }
 
@@ -289,8 +289,8 @@
         display: flex;
         align-items: center; 
         gap: 1rem;
-        margin-right: 20rem;
-        transform: translateY(30%);
+        margin-right: 22rem;
+        margin-top: -8rem;
     }
     
     .contact-me {
