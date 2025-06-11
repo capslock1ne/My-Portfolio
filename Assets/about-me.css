@@ -526,7 +526,7 @@
     
 }
 
-@media (max-width: 480px) and (max-width: 599px) {
+@media (max-width: 480px)  {
 
     .about-section-more {  
         padding: 15rem 2rem !important;

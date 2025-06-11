@@ -345,7 +345,7 @@
 
 
 
-        @media  (max-width: 480px) and (max-width: 599px) {
+        @media (max-width: 480px) {
             .left-content-container{
                 display: flex;
                 justify-content: center;    
@@ -373,7 +373,7 @@
               display: flex;
               top: -55%;
               margin: 0 auto;
-              padding-right: 2rem;
+              padding-right: 5rem;
               width: 130%;
               
           }
@@ -487,16 +487,16 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: 2rem;
+            margin-top: 20rem !important;
          }
 
          .skills-icon  {
             display: flex;;
             position: relative;
-            transform: translateY(25%);
+            
          }
          .header-title-skills{
-            transform: translateY(15%);
+            transform: translateY(-15%);
          }
          .box-container{
             display: flex;
@@ -506,7 +506,8 @@
             flex-wrap: wrap;
             margin: 0 auto;
             text-align: center;
-            transform: translateX(-15%);
+            transform: translateY(-32%) !important;
+            padding-right: 20rem !important;
         
          }
 
