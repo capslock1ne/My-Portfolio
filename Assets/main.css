@@ -376,7 +376,6 @@
               width: 100%;
               padding: 0 1rem;
               position: relative;
-              z-index: 1 !important;
               transform: translate(15%, 25%) !important;
             }
           
@@ -416,7 +415,7 @@
           
             .download-cv {
               font-size: 1rem;
-              transform: translate(50%, -90%) !important;
+              transform: translate(45%, -90%) !important;
             
             }
           
@@ -426,7 +425,7 @@
               align-items: center;
               text-emphasis: center;
               margin: 0 auto !important;
-              transform: translate(-75%, 85%) !important;
+              transform: translate(-80%, 85%) !important;
 
               
             }
