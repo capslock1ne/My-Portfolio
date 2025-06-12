@@ -345,7 +345,7 @@
 
 
 
-        @media (max-width: 490px) {
+        @media (max-width: 599px) {
             .left-content-container{
                 display: flex;
                 justify-content: center;    
@@ -493,6 +493,7 @@
          .skills-icon  {
             display: flex;;
             position: relative;
+            transform: translateY(-150%) !important;
             
          }
          .header-title-skills{
