@@ -366,7 +366,7 @@
               max-width: auto;
               height: 40% !important;
               margin: 0 auto !important;
-              transform: translate(-50%, -60%) !important;
+              transform: translate(-60%, -60%) !important;
             }
           
             .right-content-container {
@@ -377,7 +377,7 @@
               padding: 0 1rem;
               position: relative;
               z-index: 1 !important;
-              transform: translate(20%, 20%) !important;
+              transform: translate(15%, 25%) !important;
             }
           
             .right-content-container h1,
@@ -386,8 +386,10 @@
               text-align: center;
             }
 
-            .typing-effect h3, .typing-effect span{
+            .typing-effect h3, 
+            .typing-effect span{
                 font-size: 1.2rem !important;
+                margin-top: 3rem;
                 text-align: center;
             }
           
@@ -414,14 +416,24 @@
           
             .download-cv {
               font-size: 1rem;
+              transform: translate(50%, -90%) !important;
+            
             }
           
             .icons-container {
               display: flex;
               justify-content: center;
-              margin-top: 2rem;
+              align-items: center;
+              text-emphasis: center;
+              margin: 0 auto !important;
+              transform: translate(-80%, 85%) !important;
+
+              
             }
           
+            .icons-container a{
+                font-size: 2rem;
+            }
             .logo-main {
               display: flex;
               margin-left: 2rem;
