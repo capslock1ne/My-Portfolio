@@ -390,7 +390,7 @@
             .typing-effect h3, 
             .typing-effect span{
                 font-size: 1.2rem !important;
-                margin-top: 10rem;
+                margin-top: 8rem;
                 text-align: center;
             }
           
@@ -417,7 +417,7 @@
           
             .download-cv {
               font-size: 1rem;
-              transform: translate(40%, 20%) !important;
+              transform: translate(40%, -50%) !important;
             
             }
           
@@ -427,7 +427,7 @@
               align-items: center;
               text-emphasis: center;
               margin: 0 auto !important;
-              transform: translate(-70%, 95%) !important;
+              transform: translate(-50%, 95%) !important;
 
               
             }
