@@ -398,7 +398,7 @@
             }
           
             .typing-effect {
-              transform: translateY(-10%);
+              transform: translateY(-5%);
               text-align: center;
             }
           
