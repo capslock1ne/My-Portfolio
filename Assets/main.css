@@ -384,6 +384,7 @@
             .right-content-container span {
               font-size: 2rem !important;
               z-index: 1;
+              width: 100%;
               text-align: center;
             }
 
