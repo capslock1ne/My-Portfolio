@@ -358,14 +358,15 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              margin-top: 12rem;
+              margin-top: 1rem;
               transform: none;
             }
           
             .hero-image img {
-              max-width: 100%;
-              height: auto;
-              margin: 0 auto;
+              max-width: auto;
+              height: 20%;
+              margin: 0 auto !important;
+              transform: translate(-50%, -50%) !important;
             }
           
             .right-content-container {
