@@ -383,6 +383,7 @@
             .right-content-container h1,
             .right-content-container span {
               font-size: 2rem !important;
+              z-index: 1;
               text-align: center;
             }
 
@@ -390,6 +391,7 @@
             .typing-effect span{
                 font-size: 1.2rem !important;
                 margin-top: 2rem;
+                z-index: 1;
                 text-align: center;
             }
           
