@@ -364,9 +364,9 @@
           
             .hero-image img {
               max-width: auto;
-              height: 20%;
+              height: 40% !important;
               margin: 0 auto !important;
-              transform: translate(-50%, -50%) !important;
+              transform: translate(-50%, -60%) !important;
             }
           
             .right-content-container {
@@ -376,14 +376,19 @@
               width: 100%;
               padding: 0 1rem;
               position: relative;
-              top: auto;
-              margin: 0 auto;
+              z-index: 1 !important;
+              transform: translate(20%, 20%) !important;
             }
           
             .right-content-container h1,
             .right-content-container span {
-              font-size: 2rem;
+              font-size: 2rem !important;
               text-align: center;
+            }
+
+            .typing-effect h3, .typing-effect span{
+                font-size: 1.2rem !important;
+                text-align: center;
             }
           
             .right-content-container span {
