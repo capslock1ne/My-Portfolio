@@ -345,26 +345,27 @@
 
 
 
-        @media (max-width: 599px) {
+        @media (max-width: 767px) {
             .left-content-container{
                 display: flex;
                 justify-content: center;    
-                align-items: center;        
+                align-items: center;      
                 height: 100vh;               
                 width: 100%;
+                transform: translate(-20%, -10%);
                 
             }
             .hero-image{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                transform: translate(-70%, -50%);
-                margin-top: 12rem;
-            }
+                
+                margin: 0 auto !important;
+              }
 
             .hero-image img {
                 max-width: auto; 
-                height: 30% !important; 
+                height: 40% !important; 
                 margin:  0 auto !important;
                 
                 
