@@ -345,7 +345,7 @@
 
 
 
-        @media (max-width: 480px) {
+        @media (max-width: 500px) {
             .left-content-container {
               display: flex;
               justify-content: center;
@@ -426,7 +426,7 @@
               align-items: center;
               text-emphasis: center;
               margin: 0 auto !important;
-              transform: translate(-50%, 85%) !important;
+              transform: translate(-75%, 85%) !important;
 
               
             }
