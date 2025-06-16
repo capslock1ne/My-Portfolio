@@ -494,11 +494,11 @@
               .skills-icon {
                 display: flex;
                 position: relative;
+                margin-top: 1rem !important;
                 
               }
             
-              .header-title-skills,
-              .skills-icon {
+              .header-title-skills {
                 transform: translateY(-8%);
               }
             
