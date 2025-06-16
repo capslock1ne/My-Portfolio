@@ -439,49 +439,7 @@
                 margin-left: 2rem;
               }
             
-              /* Footer */
-              .footer {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin: 0 auto;
-              }
-            
-              .footer-container {
-                width: 100%;
-                padding: 5rem 1rem;
-                margin-top: -5rem;
-                background-color: var(--header-bg-color);
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                position: relative;
-              }
-            
-              .footer-links {
-                display: flex;
-                justify-content: center;
-                margin-top: -5rem;
-              }
-            
-              .links {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                padding: 1rem;
-                margin: 0 auto;
-              }
-            
-              .footer-socials {
-                transform: translateY(10%);
-              }
-            
-              .footer-bottom {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 0 auto;
-              }
+
             
               /* Skills Section */
               .skills-container {
@@ -548,6 +506,7 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                transform: translateY(-50%);
               }
             
               /* Projects Section */
@@ -555,19 +514,79 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding: 5rem 1rem;
-                width: 100%;
-                transform: none;
+                padding: 5rem !important;
+                width: 100% !important;
                 text-align: center;
               }
             
               .main-card-container {
+                position: relative;
+                margin-top: 1rem;
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                overflow: hidden;
+                height: 60vh;
+                max-width: 100vw; 
+            }
+
+            .slider-wrapper{    
+                width: 950px !important; 
+                overflow: hidden !important;
+            }
+
+          /* Footer */
+              .footer {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
+                align-items: center;
                 margin: 0 auto;
-                text-align: center;
               }
+            
+              .footer-container {
+                width: 100%;
+                padding: 5rem 1rem;
+                margin-top: -5rem;
+                background-color: var(--header-bg-color);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+              }
+
+              .footer-logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10rem;
+              }
+            
+              .footer-links {
+                display: flex;
+                justify-content: center;
+                transform: translateY(-20%);
+              }
+            
+              .links {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+                margin: 0 auto;
+              }
+            
+              .footer-socials {
+                transform: translateY(-350%) !important;
+              }
+            
+              .footer-bottom {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto !important;
+                transform: translateY(-200%) !important;
+              }
+              
           }
           
       
