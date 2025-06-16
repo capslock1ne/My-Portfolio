@@ -345,7 +345,7 @@
 
 
 
-        @media (max-width: 767px) {
+        @media (min-width: 767px) {
             .left-content-container {
                 display: flex;
                 justify-content: center;
