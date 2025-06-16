@@ -495,12 +495,13 @@
                 display: flex;
                 position: relative;
                 justify-content: center;
-                padding-top: 1rem !important;
+                padding-bottom: 2rem !important;
+                transform: translateY(-40%) !important;
                 
               }
             
               .header-title-skills {
-                transform: translateY(-8%);
+                transform: translateY(-15%);
               }
             
               .box-container {
