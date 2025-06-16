@@ -398,7 +398,7 @@
             
               .typing-effect {
                 position: relative;
-                transform: translateY(-20%);
+                transform: translateY(-5%);
                 text-align: center;
               }
             
