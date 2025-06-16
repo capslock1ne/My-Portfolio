@@ -364,7 +364,7 @@
                 max-width: auto;
                 height: 100%;
                 margin: 0 auto ;
-                transform: translate(-50%, -70%) !important;
+                transform: translate(-55%, -70%) !important;
               }
             
               .right-content-container {
@@ -494,30 +494,40 @@
               .skills-icon {
                 display: flex;
                 position: relative;
+                
               }
             
-              .header-title-skills {
-                transform: translateY(-15%);
+              .header-title-skills,
+              .skills-icon {
+                transform: translateY(-8%);
               }
             
               .box-container {
                 display: flex;
                 flex-direction: column;
-                justify-content: center;
-                align-items: center;
                 flex-wrap: wrap;
-                padding-right: 2rem;
-                transform: translateY(-32%);
-                margin: 0 auto;
+                max-width: 200px !important;
+                transform: translateY(-5%);
+                margin-right: 20rem;
+                padding: 1rem 5rem !important;
+                justify-content: center;
                 text-align: center;
               }
             
               .box-container .box {
-                width: 80%;
+                width: 80px !important;
                 height: auto;
                 display: flex;
-                margin: 1rem auto;
-                padding: 2rem;
+                flex-direction: column;
+                margin: 0 auto;
+                padding: 1rem  !important;
+              }
+
+              .box-container .box img{
+                width: 30px !important;
+                height: auto !important;
+                margin: 0 auto;
+                text-align: center;
               }
             
               /* Education Section */
