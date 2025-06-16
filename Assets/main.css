@@ -343,9 +343,7 @@
                     
         }
 
-
-
-        @media (max-width: 767px) {
+        @media (min-width: 361px) and (max-width: 412px) {
             .left-content-container {
                 display: flex;
                 justify-content: center;
@@ -364,7 +362,7 @@
             
               .hero-image img {
                 max-width: auto;
-                height: 40%;
+                height: 100%;
                 margin: 0 auto ;
                 transform: translate(-50%, -70%) !important;
               }
@@ -400,7 +398,7 @@
             
               .typing-effect {
                 position: relative;
-                transform: translateY(-15%);
+                transform: translateY(-20%);
                 text-align: center;
               }
             
@@ -428,7 +426,7 @@
                 align-items: center;
                 text-emphasis: center;
                 margin: 0 auto;
-                transform: translate(-170%, 85%) !important;
+                transform: translate(-60%, 85%) !important;
   
                 
               }
