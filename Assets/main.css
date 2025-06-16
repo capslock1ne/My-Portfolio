@@ -343,7 +343,7 @@
                     
         }
 
-        @media  (max-width: 412px) {
+        @media (min-width: 361px) and (max-width: 412px) {
             .left-content-container {
                 display: flex;
                 justify-content: center;
@@ -508,15 +508,15 @@
                 flex-wrap: wrap;
                 max-width: 200px !important;
                 transform: translateY(-5%);
-                margin-right: 20rem;
+                margin-right: 15rem;
                 padding: 1rem 5rem !important;
                 justify-content: center;
                 text-align: center;
               }
             
               .box-container .box {
-                width: 80px !important;
-                height: auto;
+                width: auto !important;
+                height: 55px !important;
                 display: flex;
                 flex-direction: column;
                 margin: 0 auto;
