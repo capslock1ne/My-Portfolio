@@ -343,7 +343,7 @@
                     
         }
 
-        @media (min-width: 361px) and (max-width: 412px) {
+        @media  (max-width: 412px) {
             .left-content-container {
                 display: flex;
                 justify-content: center;
@@ -507,7 +507,6 @@
                 flex-direction: column;
                 flex-wrap: wrap;
                 max-width: 200px !important;
-                height: 120vh !important;
                 transform: translateY(-5%);
                 margin-right: 20rem;
                 padding: 1rem 5rem !important;
