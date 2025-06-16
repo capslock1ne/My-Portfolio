@@ -345,7 +345,7 @@
 
 
 
-        @media (max-width: 480px) {
+        @media (max-width: 767px) {
             .left-content-container {
                 display: flex;
                 justify-content: center;
@@ -364,9 +364,9 @@
             
               .hero-image img {
                 max-width: auto;
-                height: 40% !important;
-                margin: 0 auto !important;
-                transform: translate(-55%, -70%) !important;
+                height: 40%;
+                margin: 0 auto;
+                transform: translate(-55%, -70%);
               }
             
               .right-content-container {
