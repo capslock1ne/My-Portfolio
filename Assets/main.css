@@ -282,27 +282,27 @@
 
                 
         .download-cv  {
-                background-color: var(--header-bg-color);
+                background-color: transparent;
                 text-decoration: none;
                 font-size: 0.9rem; 
                 font-weight: bold;
                 margin-top: 1rem;
                 padding: 0.5rem 1rem;
                 color: var(--main-txt-color);
-                border-radius: 2rem;
-                border: none;
-                box-shadow: 0px 2px 8px rgba(255, 212, 241, 0.6);
+                border-radius: 4px;
+                border: 2px solid var(--main-txt2-color);
+                box-shadow: 0px 2px 8px rgba(78, 0, 52, 0.6);
                 display: inline-block; 
                 cursor: pointer; 
                 height: auto;
                 position: relative;
-               
+                transition: all 0.3s ease-in-out !important;
             }
             
             
             .download-cv:hover{
-                transition: all 0.2s ease-in-out;
-                transform: scale(1.1);
+                
+                transform: scale(1.1) !important;
                 background-color: #111111 !important;
                 color: var(--main-txt2-color);
             }
@@ -316,7 +316,7 @@
             gap: 1rem;
             top: 0;
             right: 0;   
-            margin-top: 33.5rem;
+            margin-top: 34rem;
             margin-right: 40rem;
             z-index: 5;
             overflow: visible;
@@ -632,6 +632,8 @@
             justify-content: center;
         }
 
+      
+
         .skills-icon img{
             width: 50px;
             height: auto;
@@ -689,8 +691,8 @@
         }
 
         .skills-section .box-container .box {
-        width: 120px;
-        height: 110px;
+        width: auto;
+        height: 20%;
         border-radius: 0.5rem;
         padding: 1.5rem;
         margin: 1rem;
@@ -700,17 +702,20 @@
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
         background: rgba(244, 168, 222, 0.03);
-        border-radius: 16px;
+        border-radius: 20px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(2.9px);
         -webkit-backdrop-filter: blur(2.9px);
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
         }
 
         .skills-section .box-container .box:hover{
-            cursor: pointer;
+   
+            border: 2px solid var(--main-txt2-color);
+            
         }
         .skills-section .box-container .box img {
         width: auto;
@@ -827,7 +832,7 @@
             min-width: 300px;
             border: 2px solid var(--main-txt-color);
             background: transparent;
-            border-radius: 20px;
+            border-radius: 4px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(2.9px);
             height: 380px;

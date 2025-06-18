@@ -31,6 +31,8 @@
     html,body{
         scroll-behavior: smooth;
         font-family: "Geologica", sans-serif;
+        overflow-x: hidden;
+        overflow-y: auto;
         
     }
 
@@ -116,6 +118,7 @@
         background-image: url('../Assets/Images/about-background.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        overflow: hidden;
         background-position: center;
 
     }
@@ -159,11 +162,7 @@
         
         }
 
-        
-
-
-
-
+    
     .about-right-container-more {
     position: relative;
     z-index: 2; 
@@ -381,6 +380,7 @@
     flex-direction: column;
     align-items: center;
     margin: 10rem 4rem;
+    z-index: 2;
 
 }
 
@@ -526,7 +526,133 @@
     
 }
 
-@media (max-width: 767px)  {
+/* Message */
+
+.message-btn{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: -50%;
+    margin-top: 18rem;
+}
+
+.message-btn button {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid var(--main-txt2-color);
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out !important;
+    z-index: 2;
+  
+}
+
+.message-btn button:hover{
+    transform: scale(1.1) !important;
+    background-color: #111111 !important;
+    color: var(--main-txt2-color);
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    height: auto;
+    color: var(--main-txt-color);
+    border: 1px solid var(--main-txt2-color);
+    box-sizing: border-box;
+    background: transparent;
+  }
+
+  input[type=message-box]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    color: var(--main-txt-color);
+    display: inline-block;
+    height: 250px;
+    border: 1px solid var(--main-txt2-color);
+    box-sizing: border-box;
+    background: transparent;
+  }
+
+.send-btn,.cancelbtn{
+    margin-top: 2rem;
+    background-color: transparent;
+    color: #fff;
+    margin: 0.5rem;
+    border: 2px solid var(--main-txt2-color);
+    padding: 0.3rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    height: auto;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out !important;
+    z-index: 2;
+}
+
+.send-btn:hover,.cancelbtn:hover{
+    transform: scale(1.1) !important;
+    background-color: #111111 !important;
+    color: var(--main-txt2-color);
+}
+  
+.modal-msg {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-msg .container {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); 
+   -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    margin-top: 15rem;
+    border: 2px solid var(--main-txt2-color);
+    border-radius: 12px;
+    max-width: 600px;
+    width: 100%;
+    
+  }
+
+  .container h2, .container b{
+    color: var(--main-txt-color);
+  }
+  
+  .modal-msg.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .modal-msg.active .container {
+    transform: scale(1);
+    opacity: 1;
+  }
+  
+
+@media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  
         padding: 15rem 2rem !important;
