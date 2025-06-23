@@ -652,6 +652,24 @@ input[type=text] {
   }
   
 
+  .modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .modal-content .close{
+    position: absolute;
+    top: -4rem;
+    right: -2rem;
+    font-size: 2rem;
+    color: var(--main-txt2-color);
+    cursor: pointer;
+  }
+
 @media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  

@@ -31,7 +31,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const modal = document.getElementById("modal");
     const msgBtn = document.getElementById("msg-btn");
-    const cancelBtn = document.querySelector(".cancel-btn");
+    const cancelBtn = document.querySelector(".cancelbtn");
+    const closeBtn = document.querySelector(".close");
 
     msgBtn.addEventListener("click", function (){
          modal.classList.add("active");
@@ -40,6 +41,11 @@ document.addEventListener("DOMContentLoaded", function () {
     cancelBtn.addEventListener("click", function(){
         modal.classList.remove("active");
     });
+
+    closeBtn.addEventListener("click", function(){
+        modal.classList.remove("active");
+    });
+
 
     window.addEventListener("click", function (event) {
         if (event.target === modal) {
