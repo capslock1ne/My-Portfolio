@@ -673,6 +673,7 @@ input[type=text] {
 @media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  
+        height: 140vh;
         padding: 15rem 2rem !important;
         justify-content: center;
         margin: 0 auto !important;
@@ -701,7 +702,7 @@ input[type=text] {
         max-width: 50%;
         height: auto;
         margin: 0 auto !important;
-        transform: translate(-250%, -20%) !important;
+        transform: translate(-260%, -70%) !important;
     }
 
     .about-icon-more{
@@ -710,7 +711,7 @@ input[type=text] {
        
     }
     .about-icon-more img{
-        transform: translateY(-30%) !important;
+        transform: translateY(-250%) !important;
         width: auto;
         height: 40%;
     }
@@ -718,20 +719,18 @@ input[type=text] {
    .about-title-more{
        display:  flex;
          flex-direction: column;
-         justify-content: center;
-         text-align: center;
-         align-items: center;
-         margin-right: 25rem !important;
+         transform: translate(-30%, -250%) !important;
    }
+
 
     .description-more {
         align-items: center !important;
         text-align: center !important;
         padding: 10rem !important;
-        max-width: 100%;
-        padding-top: 7rem !important;
+        max-width: 85%;
+        padding-top: 2rem !important;
         justify-content: center !important;
-        transform: translate(-37%, 5%) !important;
+        transform: translate(-40%, 5%) !important;
     }
 
     .description-more p{
@@ -753,11 +752,14 @@ input[type=text] {
         justify-content: center !important;
         align-items: center !important;
         margin-right: 10rem;
+        margin-top: -8rem;
+        
     }
 
     .contact-me img {
         width: 30px; 
         height: auto;
+        margin-left: -1rem;
     }
 
     .contacts h4 , .contacts span{
@@ -768,9 +770,23 @@ input[type=text] {
         align-items: center !important; 
         justify-content: center !important;
         text-align: center !important;
-        margin: 0 auto; 
-        margin-top: -5rem;
+        margin-left: -2.5rem;
+        margin-top: -4rem;
         display: flex;
+    }
+
+    .message-btn{
+        display: flex;
+        position: relative;
+        
+    }
+
+    .message-btn button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-450%);
+        margin-top: 40rem;
     }
 
     .icons-container-more {
