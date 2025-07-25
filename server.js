@@ -12,6 +12,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 
+app.get("/", (req, res) => {
+  res.sendFile("index.html", { root: "public" });
+});
+
+
 app.post('/api/send-email', async (req, res) => {
 
     const {email , message} = req.body;
