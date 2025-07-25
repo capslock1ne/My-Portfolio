@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Russel Lacap - Web Developer Portfolio">
+
+  <!-- Bootstrap CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css">
+  <script src="https://unpkg.com/boxicons@2.0.7/dist/boxicons.js"></script>
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+  <!--Type text effect-->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="./about-me.css">
+
+  <title>Russel Lacap</title>
+
+</head>
+
+<body>
+
+  <!--Navigation start here-->
+  <section class="home-section" id="home">
+
+    <div class="header">
+      <div class="logo-main">
+        <img src="Images/logo-real.png" alt="">
+      </div>
+      
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+
+          <!-- <a class="navbar-brand" href="#">Logo</a>-->
+          <!-- Hamburger Button -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">ABOUT ME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">SKILLS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">PROJECTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html">EDUCATION</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+
+
+  <!--ABOUT starts here-->
+  <section class="about-section-more" id="aboutmore">
+
+    <div class="about-main-more">
+
+      <div class="about-left-container-more">
+        <div class="about-hero-image-more">
+          <img src="Images/img-more.jpeg" data-aos="zoom-in-right" />
+        </div>
+      </div>
+
+      <div class="about-right-container-more" data-aos="fade-left" data-aos-anchor="#example-anchor"
+        data-aos-offset="500" data-aos-duration="500">
+        <div class="about-content-more">
+
+          <div class="about-icon-more">
+            <img width="48" height="48" src="Images/heartu.gif" alt="so-so-skin-type-2" />
+          </div>
+
+          <div class="about-title-more">
+            <h1 class="abt-title-more" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+              data-aos-duration="500">
+              About <span>me</span>
+            </h1>
+            <div class="horizontal-line-more"></div>
+          </div>
+
+          <div class="description-more">
+            <p data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500">
+              Hello! I’m Russel Lacap, a passionate web developer with a knack for creating beautiful and functional
+              My journey into web development started with a deep curiosity about how websites work, which quickly
+              turned into a passion for creating sleek and functional digital experiences. I transitioned from a call
+              center job to pursue a career in tech, continuously learning and improving my skills along the way.
+              I have worked on various projects, including <span> e-commerce platforms, interactive UI components, and
+                RESTful APIs,</span> and I’m always excited to tackle new challenges. My goal is to become a highly
+              skilled full-stack developer while also exploring opportunities in entrepreneurship and creative design.
+            </p>
+          </div>
+
+          <div class="contacts">
+            <div class="contact-me">
+              <img src="Images/contact-icon.gif" alt="">
+            </div>
+
+            <h4> Contact<span> Me </span></h4>
+
+            <div class="contact-details">
+
+              <div class="contact-no">
+                <img src="Images/phone.png" alt="">
+                <p>09164369289</p>
+              </div>
+
+              <div class="email-address">
+                <img src="Images/email-inf.png" alt="">
+                <p>russelgood68@gmail.com</p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Message form-->
+
+    <div class="message-btn">
+      <button id="msg-btn">
+        Message me <i class="bi bi-chat-left-heart-fill"></i>
+      </button>
+    </div>
+    
+    <div class="modal-msg" id="modal">
+      
+     
+    <form class="container" id="messageForm">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+      </div>
+
+        <h2>Hit me up!</h2>
+        <input type="text" placeholder="Enter your email" name="email" required>
+    
+        <label for="Leave-msg"><b>Leave your message:</b></label>
+        <input type="message-box" placeholder="Type something..." name="lmsg" required>
+    
+        <button class="send-btn" type="submit">Send <i class="bi bi-send"></i></button>
+   
+        <button type="button" class="cancelbtn">Cancel</button>
+       
+    </form>
+
+      
+    
+    
+    <div class="side-icons-container">
+      <div class="vertical-more"></div>
+
+      <div class="icons-container-more" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <a href="https://www.facebook.com/russel.lacap.92" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/@unrealme8696" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://github.com/capslock1ne" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/russel-lacap-207355354/" target="_blank"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="vertical-more-down"></div>
+    </div>
+    
+  </section>
+
+   <!-- Footer -->
+   <footer class="footer-about">
+    <div class="footer-container-about">
+      <div class="footer-logo-about">
+        <h2>Russel <span>Lacap</span></h2>
+        <p>Web Developer | Designer</p>
+      </div>
+      <div class="footer-links-about">
+        <h3>Quick <span> Links </span></h3>
+        <ul class="links-about">
+          <li><a href="#home" >Home</a></li>
+          <li><a href="about-me.html">About</a></li>
+          <li><a href="./index.html">Skills</a></li>
+          <li><a href="./index.html">Education</a></li>
+          <li><a href="./index.html">Projects</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-socials-about">
+        <h3>Follow <span>Me </span></h3>
+        <div class="social-icons-about">
+          <a href="https://www.facebook.com/russel.lacap.92" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.youtube.com/@unrealme8696" target="_blank"><i class="bi bi-youtube"></i></a>
+          <a href="https://github.com/capslock1ne" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/russel-lacap-207355354/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom-about">
+      <p>© 2025 Russel Lacap | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+    });
+
+    
+  </script>
+  <script src="./index.js"></script>
+  <script src="./msg.js"></script>
+   <script src="../server.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
