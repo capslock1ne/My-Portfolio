@@ -6,16 +6,18 @@ import { createTransport } from "nodemailer";
 config();
 
 const app = express();
-const port = 3000;
+const path = require('path');
+const PORT = process.env.PORT || 3000;
+
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 
 
-app.get("/", (req, res) => {
-  res.sendFile("index.html", { root: "public" });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-
 
 app.post('/api/send-email', async (req, res) => {
 
@@ -56,4 +58,4 @@ try {
 });
 
 
-app.listen(port, () => console.log("Server started on port", port));
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
