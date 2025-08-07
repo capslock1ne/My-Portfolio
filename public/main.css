@@ -821,7 +821,7 @@
         }
 
         .slider-wrapper {
-            width: 950px; 
+            width: 950px;
             overflow: hidden;
 
             
@@ -836,10 +836,14 @@
             border-radius: 4px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(2.9px);
-            height: 380px;
+            height: 400px;
+           transition: transform 0.3s ease;
             cursor: pointer;
           }
-
+    
+           .card:hover{
+            transform: scale(1.1);
+           }
           .card-body {
             display: flex;
             flex-direction: column;
