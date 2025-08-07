@@ -38,13 +38,15 @@ app.post("/api/send-email", async (req, res) => {
     subject: "New message from portfolio",
     text: `From: ${email}\n\nMessage:\n${message}`,
   };
-
+ 
+   
   try {
+
     await transporter.sendMail(mailOptions);
-    res.json({ message: "Message sent successfully!" });
+    res.json({ notify: "Message sent successfully! 🤗" });
   } catch (error) {
     console.log(error);
-    res.status(500).json({ message: "Failed to send message." });
+    res.status(500).json({ notify: "Failed to send message." });
   }
 });
 

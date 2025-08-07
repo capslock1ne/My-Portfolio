@@ -141,39 +141,7 @@
         </div>
       </div>
     </div>
-
-    <!--Message form-->
-
-    <div class="message-btn">
-      <button id="msg-btn">
-        Message me <i class="bi bi-chat-left-heart-fill"></i>
-      </button>
-    </div>
-    
-    <div class="modal-msg" id="modal">
-      
-     
-    <form class="container" id="messageForm">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-      </div>
-
-        <h2>Hit me up!</h2>
-        <input type="text" placeholder="Enter your email" name="email" required>
-    
-        <label for="Leave-msg"><b>Leave your message:</b></label>
-        <input type="message-box" placeholder="Type something..." name="lmsg" required>
-    
-        <button class="send-btn" type="submit">Send <i class="bi bi-send"></i></button>
-   
-        <button type="button" class="cancelbtn">Cancel</button>
-       
-    </form>
-
-      
-    
-    
-    <div class="side-icons-container">
+ <div class="side-icons-container">
       <div class="vertical-more"></div>
 
       <div class="icons-container-more" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -185,9 +153,58 @@
 
       <div class="vertical-more-down"></div>
     </div>
+</div>
+    <!--Message form-->
+ 
+ 
+<div class="message-btn">
+      <button id="msg-btn" data-aos="fade-left" data-aos-anchor="#example-anchor" data-aos-offset="500"
+              data-aos-duration="500">
+        Message me <i class="bi bi-chat-left-heart-fill"></i>
+      </button>
+    </div>
+
+
+    
+    <div class="modal-msg" id="modal">
+      
+     
+    <form class="container" id="messageForm">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+      </div>
+
+        <h2>Hit me up!</h2>
+        <textarea class="email-input" placeholder="Enter your email" name="email" required></textarea>
+    
+        <label for="Leave-msg"><b>Leave your message:</b></label>
+        <textarea  class="message-box" placeholder="Type something..." name="lmsg" required></textarea>
+    
+        <button class="send-btn" type="submit">Send <i class="bi bi-send"></i></button>
+   
+        <button type="button" class="cancelbtn">Cancel</button>
+       
+    </form>
+   
+
+     <!--Pops up notification-->
+
+     <div  class="pops-up-msg-container" style="display: none;">
+
+       <div class="msg-box">
+         <p id="pop-up-message"></p>
+       </div>
+       
+     </div>
+    </div>
+   
+    
+ 
+
     
   </section>
-
+ 
+      
    <!-- Footer -->
    <footer class="footer-about">
     <div class="footer-container-about">
