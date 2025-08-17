@@ -65,7 +65,9 @@
 
        .logo-main img{
         width: auto;
-        height: 125%;
+        height: 90%;
+        cursor: pointer;
+        margin-top: 1rem;
         margin-left: -5rem;
        }
 
