@@ -445,6 +445,7 @@
               /* Skills Section */
               .skills-container {
                 display: flex;
+                height: 120vh;
                 flex-direction: column;
                 align-items: center;
                 padding: 2rem;
@@ -458,7 +459,8 @@
                 transform: translateY(-40%) !important;
                 
               }
-            
+
+           
               .header-title-skills {
                 transform: translateY(-15%);
               }
@@ -597,7 +599,7 @@
 
         .skills-section {
         display: flex;
-        min-height: 100vh;
+        min-height: 120vh;
         width: 100%;
         background-image: var(--background-image);
         background-repeat: no-repeat;
@@ -632,9 +634,16 @@
             text-align: center;
             justify-content: center;
         }
-
       
-
+         .skills-container .skills-intro{
+            transform: translateY(-60%);
+            color: var(--main-txt-color);
+            text-align: center;
+         }
+       
+        .skills-intro span{
+            color: var(--main-txt2-color);
+        }
         .skills-icon img{
             width: 50px;
             height: auto;
@@ -646,7 +655,7 @@
         }
 
         .header-title-skills{
-            margin-top: 15rem;
+            margin-top: 17rem;
         }
 
         .skills-section h1 {
@@ -668,7 +677,7 @@
          width: 20px;
          height: auto;
         color: var(--main-txt-color);
-        margin-top: -13rem;
+        margin-top: -8rem;
 
         }
 
@@ -681,19 +690,19 @@
         }
 
         .skills-section .box-container {
-        margin-top: -40rem;
         display: flex;
         flex-wrap: wrap;
+        transform: translateY(-190%);
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
         gap: 1rem;
-        padding: 10rem;
+        padding: 20rem;
         justify-content: center;
 
         }
 
         .skills-section .box-container .box {
         width: auto;
-        height: 20%;
+        height: 100px;
         border-radius: 0.5rem;
         padding: 1.5rem;
         margin: 1rem;
@@ -756,7 +765,7 @@
 
         .projects-section{
             height: auto;
-            min-height: 100vh;  
+            min-height: 120vh;  
             background-image: var(--background-image);
             background-repeat: no-repeat;
             background-size: cover;
@@ -809,7 +818,7 @@
 
         .main-card-container {
             position: relative;
-            margin-top: 1rem;
+            margin-top: 8rem;
             display: flex;
             align-items: center;
             gap: 2rem;
@@ -820,6 +829,14 @@
 
         }
 
+        .projects-intro{
+            color: var(--main-txt-color);
+            margin-top: -2rem;
+        }
+
+          .projects-intro span {
+            color: var(--main-txt2-color);
+          }
         .slider-wrapper {
             width: 950px;
             overflow: hidden;
