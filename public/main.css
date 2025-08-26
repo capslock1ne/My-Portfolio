@@ -831,6 +831,13 @@
 
         }
 
+        #cardContainer {
+           display: flex;
+           gap: 20px;
+            transition: transform 0.5s ease; 
+           will-change: transform;
+}
+
         .projects-intro{
             color: var(--main-txt-color);
             margin-top: -2rem;
@@ -849,14 +856,14 @@
         .card {
             display: flex;
             flex-direction: column; 
-            min-width: 300px;
+            min-width: 350px;
             border: 2px solid var(--main-txt-color);
             background: transparent;
             border-radius: 4px;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             backdrop-filter: blur(2.9px);
-            height: 400px;
-           transition: transform 0.3s ease;
+            height: 450px;
+            transition: transform 0.3s ease;
             cursor: pointer;
           }
     
@@ -869,6 +876,24 @@
             justify-content: space-between;
             padding: 1rem;
             flex-grow: 1;
+          }
+
+
+          .card button{
+            position: relative;
+            flex-direction: row;
+            background-color: var(--header-bg-color);
+            text-decoration: none;
+            font-size: 0.8rem; 
+            font-weight: bold;
+            padding: 0.3rem 0.8rem;
+            color: rgb(37, 100, 235);
+            border: none;
+            margin: 0.2rem;
+            outline: none;
+            transition: all 0.3s ease-in-out;
+            cursor: pointer; 
+            height: auto;
           }
 
         .card-body h5{
@@ -888,6 +913,7 @@
             color: var(--main-txt-color);
             font-weight: 100;
             margin: 1rem 0;
+            font-weight: 300;
             position: static; 
           }
 
@@ -909,7 +935,7 @@
 
 
         .btn-demo{
-            margin-left: 3rem;
+            margin-left: 4rem;
             align-self: self-start;
             background-color: var(--header-bg-color);
             text-decoration: none;
@@ -939,7 +965,7 @@
             font-size: 0.9rem; 
             font-weight: 500;
             padding: 0.3rem 0.8rem;
-            margin-right: 2rem;
+            margin-right: 3rem;
             color: var(--main-txt-color) !important;
             border-radius: 4rem;
             border: none;
