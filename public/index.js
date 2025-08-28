@@ -66,21 +66,49 @@ const modal = document.getElementById("modal");
 const popUp = document.querySelector(".pops-up-msg-container");
 const popMsg = document.getElementById("pop-up-message");
 
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+ 
+    const email = this.email.value;
+    const message = this.lmsg.value;
+  
 
-form.addEventListener("submit", function (e) {
-  e.preventDefault();
+  try {
 
-  emailjs.sendForm("service_8m5yrqd", "YOUR_TEMPLATE_ID", form)
-    .then(() => {
-      popMsg.textContent = "Message sent successfully! 🤗";
-      popUp.style.display = "block";
-      form.reset();
-    })
-    .catch((error) => {
-      console.log("FAILED...", error);
-      popMsg.textContent = "Failed to send.";
+    const req = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, message})
     });
-});
 
+    const data = await req.json();
+
+
+    const notify = "Message sent successfully! 🤗";
+    if (popMsg && popUp) {
+      popMsg.textContent = notify;
+      popUp.style.display = "block";
+      form.style.display = "none";
+      popUp.classList.remove("fade-out");
+       
+
+       setTimeout(() => {
+        popUp.classList.add("fade-out");
+        form.style.display = "block";
+        popUp.style.display ="none";
+       },3000);
+    }
+
+  
+    form.reset();
+    
+  } catch (error) {
+    
+     popMsg.textContent = "Failed to send.";
+     
+     console.log(error);
+  }
+    
+});
 
 });
