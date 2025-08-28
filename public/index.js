@@ -70,7 +70,7 @@ const popMsg = document.getElementById("pop-up-message");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", form)
+  emailjs.sendForm("service_8m5yrqd", "YOUR_TEMPLATE_ID", form)
     .then(() => {
       popMsg.textContent = "Message sent successfully! 🤗";
       popUp.style.display = "block";
