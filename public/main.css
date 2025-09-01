@@ -447,7 +447,7 @@
               /* Skills Section */
               .skills-container {
                 display: flex;
-                height: 120vh;
+                height: 130vh;
                 flex-direction: column;
                 align-items: center;
                 padding: 2rem;
@@ -458,38 +458,43 @@
                 position: relative;
                 justify-content: center;
                 padding-bottom: 2rem !important;
-                transform: translateY(-40%) !important;
+                transform: translateY(10%) !important;
                 
               }
 
+              .skills-intro{
+                padding: 12rem;
+                margin-top: 12rem;
+                font-size: 0.8rem;
+                text-align: center;
+                color: var(--main-txt-color);
+              }
            
               .header-title-skills {
-                transform: translateY(-15%);
+                transform: translateY(-80%);
               }
             
               .box-container {
-                display: flex;
+                display: grid;
                 flex-direction: column;
-                flex-wrap: wrap;
-                max-width: 200px !important;
-                transform: translateY(-5%);
-                margin-right: 22rem;
-                padding: 1rem 5rem !important;
+                grid-template-columns: repeat(5, 1fr) !important;
+                max-width: 550px !important;
+                transform: translateY(-80%) !important;
+                margin-right: 18rem;
+                padding: 10rem !important;
                 justify-content: center;
                 text-align: center;
               }
             
-              .box-container .box {
-                width: auto !important;
-                height: 55px !important;
-                display: flex;
-                flex-direction: column;
-                margin: 0 auto;
-                padding: 1rem  !important;
-              }
+               .box {
+                 display: flex;
+                 flex-direction: column;
+                 align-items: center;
+                }
+
 
               .box-container .box img{
-                width: 30px !important;
+                width: 25px !important;
                 height: auto !important;
                 margin: 0 auto;
                 text-align: center;
