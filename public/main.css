@@ -370,6 +370,38 @@
                 transform: translate(-55%, -70%) !important;
               }
             
+            
+                .navbar-collapse {
+                 position: fixed;
+                 top: 0;
+                 right: -250px; 
+                 width: 230px;
+                 border-radius: 1rem;
+                 height: 50vh;
+                 background-color: var(--header-bg-color); 
+                 padding-top: 70px !important; 
+                 transition: right 0.3s ease;
+                }
+
+                .navbar-collapse.show {
+                  right: 0; 
+                  }
+
+               .navbar-nav {
+                 flex-direction: column;
+                 margin-left: 1rem !important;
+                  
+                }
+
+                .navbar-nav .nav-item {
+                  margin: 5px 0;
+              }
+
+                 .navbar-toggler {
+                 z-index: 1051; 
+             }
+                
+
               .right-content-container {
                 display: flex;
                 flex-direction: column;
@@ -401,7 +433,7 @@
             
               .typing-effect {
                 position: relative;
-                transform: translateY(-5%);
+                transform: translateY(-7%);
                 text-align: center;
               }
             
@@ -429,7 +461,7 @@
                 align-items: center;
                 text-emphasis: center;
                 margin: 0 auto;
-                transform: translate(-60%, 85%) !important;
+                transform: translate(-60%, 90%) !important;
   
                 
               }
@@ -501,7 +533,7 @@
               }
             
               /* Education Section */
-              .main-education-containerr {
+              .main-education-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -518,6 +550,62 @@
                 text-align: center;
                 transform: translateY(-50%);
               }
+
+              .education-section{
+                display: flex;
+                height: 140vh;
+                flex-direction: column !important;
+                align-items: center;
+            }
+
+            .education-section .education-icon{
+                display: flex;
+                margin-top: -5rem;
+                height: 600px !important;
+                width: auto;
+            }
+
+            .education-section .header-title {
+                margin-top: 5rem !important;
+                
+            }
+
+            .education-intro{
+                font-size: 0.8rem;
+                margin-top: -22rem !important;
+            }
+
+            .education-container {
+              transform: translateY(25%) !important;
+            }
+          
+            .fourth-title{
+                margin-top: 12rem !important;
+                text-align: center;
+            }
+
+            .fourth-title p{
+                margin-top: 2rem !important;
+            }
+             .btn-more{
+               margin-top: 5rem !important;
+              
+            }
+
+
+            .card-more{
+                display: flex;
+                flex-direction: column !important;
+                align-items: center !important;
+                margin-top: -5rem !important;
+                padding: 10rem;
+                width: 350px !important;
+            }
+
+             .card-more p{
+                font-size: 0.9rem !important;
+                text-align: center;
+            }
             
               /* Projects Section */
               .projects-section .container {
@@ -528,10 +616,23 @@
                 width: 100% !important;
                 text-align: center;
               }
+
+              .projects-section .container{
+                margin-top: 5rem !important;
+              }
             
+              .projects-intro{
+                padding: 5rem;
+                width: 500px;
+                font-size: 0.8rem;
+                margin-top: -12rem !important;
+                text-align: center;
+              }
+
+
               .main-card-container {
                 position: relative;
-                margin-top: 1rem;
+                margin-top: -3rem !important;
                 display: flex;
                 align-items: center;
                 gap: 2rem;
@@ -544,6 +645,9 @@
                 width: 950px !important; 
                 overflow: hidden !important;
             }
+
+
+            
 
           /* Footer */
               .footer {

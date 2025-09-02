@@ -694,7 +694,7 @@ textarea:focus {
 @media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  
-        height: 140vh;
+        height: 150vh;
         padding: 15rem 2rem !important;
         justify-content: center;
         margin: 0 auto !important;
@@ -708,6 +708,39 @@ textarea:focus {
         justify-content: center;
     }
 
+    .navbar-collapse {
+                 position: fixed;
+                 top: 0;
+                 right: -250px; 
+                 width: 230px;
+                 border-radius: 1rem;
+                 height: 50vh;
+                 background-color: var(--header-bg-color); 
+                 padding-top: 70px !important; 
+                 transition: right 0.3s ease;
+                }
+
+                .navbar-collapse.show {
+                  right: 0; 
+                  }
+
+               .navbar-nav {
+                 flex-direction: column;
+                 margin-left: 1rem !important;
+                  
+                }
+
+                .navbar-nav .nav-item {
+                  margin: 5px 0;
+              }
+
+                 .navbar-toggler {
+                 z-index: 1051; 
+             }
+
+    .logo-main{
+        margin-left: 2rem;
+    }
     .about-left-container-more {
         margin-right: 0;
         margin-bottom: 2rem;
@@ -806,7 +839,7 @@ textarea:focus {
         text-align: center;
         justify-content: center;
         align-items: center;
-        transform: translateX(-450%);
+        transform: translateX(-620%) !important;
         margin-top: 40rem;
     }
 
@@ -820,20 +853,32 @@ textarea:focus {
     }
 
     .modal-msg .container{
-        margin: 0 auto;
+        margin: 0 auto !important;
         text-align: center;
         justify-content: center;
         align-items: center;
-        max-width: 600px !important;
-        width:  120%;
-        transform: translate(32%, 10%) !important;
+        max-width: 400px !important;
+        width:  100%;
+        padding: 2rem !important;
+        margin-top: 2rem !important;
+        
     }
+
+    .close{
+        padding: 2rem !important;
+    }
+
+    textarea {
+        width: 300px !important;
+        padding: 5px 50px !important;
+      }
     .container h2{
         font-size: 2rem;
     }
 
     input[type=text] {
         width: 100%;
+        text-align: center !important;
         padding: 10px 30px;
       }
     
