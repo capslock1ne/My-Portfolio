@@ -252,7 +252,7 @@
             .typing-effect{
                 
                     position: relative;
-                    margin-top: -48rem;
+                    margin-top: -45rem;
                 }
 
                 .typing-text::after {
@@ -319,8 +319,8 @@
             gap: 1rem;
             top: 0;
             right: 0;   
-            margin-top: 34rem;
-            margin-right: 40rem;
+            margin-top: 32.5rem;
+            margin-right: 38rem;
             z-index: 5;
             overflow: visible;
             
@@ -605,6 +605,10 @@
              .card-more p{
                 font-size: 0.9rem !important;
                 text-align: center;
+            }
+
+            .card-body-m {
+                margin-top: -50rem !important;
             }
             
               /* Projects Section */
@@ -1170,7 +1174,7 @@
         .fourth-title {
             display: flex;
             align-items: center;
-            margin-top: -20rem;
+            margin-top: -15rem;
             text-align: center;
             justify-content: center;
             z-index: 1;
@@ -1250,7 +1254,7 @@
         
         .btn-more {
             display: flex;
-            margin-top: -53rem;
+            margin-top: -50rem;
             position: relative;
             background-color: transparent;
             text-decoration: none;
@@ -1307,7 +1311,7 @@
             backdrop-filter: blur(2.9px);
             padding: 2rem;
             cursor: pointer;    
-            transform: translateY(-580%) !important;
+            transform: translateY(-550%) !important;
             z-index: 1;
            
           
