@@ -433,7 +433,7 @@
             
               .typing-effect {
                 position: relative;
-                transform: translateY(-7%);
+                transform: translateY(-15%) !important;
                 text-align: center;
               }
             
