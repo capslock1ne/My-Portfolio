@@ -594,21 +594,16 @@
 
 
             .card-more{
-                display: flex;
                 flex-direction: column !important;
                 align-items: center !important;
-                margin-top: -5rem !important;
-                padding: 10rem;
+                padding: 1rem !important;
+                margin-top: -25rem !important;
                 width: 350px !important;
             }
 
              .card-more p{
                 font-size: 0.9rem !important;
                 text-align: center;
-            }
-
-            .card-body-m {
-                margin-top: -50rem !important;
             }
             
               /* Projects Section */
