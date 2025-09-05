@@ -252,7 +252,7 @@
             .typing-effect{
                 
                     position: relative;
-                    margin-top: -45rem;
+                    margin-top: -50rem;
                 }
 
                 .typing-text::after {
@@ -319,8 +319,8 @@
             gap: 1rem;
             top: 0;
             right: 0;   
-            margin-top: 32.5rem;
-            margin-right: 38rem;
+            margin-top: 34rem;
+            margin-right: 40rem;
             z-index: 5;
             overflow: visible;
             
@@ -1169,7 +1169,7 @@
         .fourth-title {
             display: flex;
             align-items: center;
-            margin-top: -15rem;
+            margin-top: -20rem;
             text-align: center;
             justify-content: center;
             z-index: 1;
@@ -1249,7 +1249,7 @@
         
         .btn-more {
             display: flex;
-            margin-top: -50rem;
+            margin-top: -55rem;
             position: relative;
             background-color: transparent;
             text-decoration: none;
@@ -1306,7 +1306,7 @@
             backdrop-filter: blur(2.9px);
             padding: 2rem;
             cursor: pointer;    
-            transform: translateY(-550%) !important;
+            transform: translateY(-600%) !important;
             z-index: 1;
            
           

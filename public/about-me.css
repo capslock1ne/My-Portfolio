@@ -20,6 +20,7 @@
         --main-bg-color: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), 
         linear-gradient(to top, rgba(27, 27, 27, 0.4) 0%, rgba(0,0,0,0.25) 200%);
         --main-txt-color:rgb(228, 228, 228);
+        --text-light-color:rgb(97, 97, 97);
         --main-txt2-color: rgb(240, 170, 205);
         --header-bg-color:rgb(31, 30, 30);
         --background-image: url('./Images/about-background.jpg');
@@ -116,7 +117,7 @@
         flex-wrap: wrap !important;
         flex-direction: column !important;
         position: relative;
-        padding: 10rem 10rem 20rem !important;
+        padding: 10rem 15rem 20rem !important;
         justify-content: center; 
         background-image: var(--background-image);
         background-repeat: no-repeat;
@@ -186,7 +187,7 @@
 
 
     .about-icon-more{
-    margin-right: 40rem;
+    margin-right: 37rem;
     display: flex;
     }
 
@@ -194,7 +195,7 @@
     .about-icon-more img{
 
         width: auto;
-        height: 30%;
+        height: 40%;
         margin-top: 1.5rem;
         overflow: visible;
       
@@ -232,8 +233,8 @@
     font-size: 1.8rem;
     color: var(--main-txt-color);
     margin-bottom: 4rem; 
-    margin-top: -4rem;
-    margin-right: 10rem;
+    margin-top: -2.5rem;
+    margin-right: 8rem;
     font-weight: bold;
     overflow: visible;
     }
@@ -300,8 +301,8 @@
         flex-direction: column !important;
         gap: 1rem;
         align-items: center;
-        margin-top: -8rem;
-        margin-right: 10rem;
+        margin-top: -14rem;
+        margin-right: 15rem;
         
     }
     
@@ -348,11 +349,13 @@
     .contact-details img {
         width: 24px; 
         height: auto;
-        margin: 0; 
+        margin-top: -1rem; 
+        margin-left: 2rem;
     }
     
     .contact-details p {
-        margin: 0;
+        margin-left: 1rem;
+        margin-top: -1.5rem;
         font-size: 1rem;
         font-variant:small-caps;
         color: var(--main-txt-color);
@@ -541,7 +544,7 @@
     align-items: center;
     justify-content: center;
     right: 41%;
-    top: 50%;
+    top: 40%;
 }
 
 .message-btn button {
@@ -576,14 +579,32 @@ textarea {
   box-sizing: border-box;
 }
 
-.email-input{
-   padding: 5px 10px;
-   margin-top: 20px;
+.container input[type=text] {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding-left: 20px;
+  color: var(--main-txt-color);
+  border: 2px solid rgb(182, 182, 182);
+  background: transparent;
+  outline: none;
+}
+
+input::placeholder{
+  color: var(--text-light-color);
+  padding-left: 3px;
+ 
 }
 
 
+textarea::placeholder {
+  color: var(--text-light-color);
+}
+
 .message-box {
-   height: 200px;
+  height: 200px;
   resize: vertical;
   padding: 10px 20px;
   margin: 8px 0;
