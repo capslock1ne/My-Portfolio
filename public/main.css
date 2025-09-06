@@ -533,6 +533,13 @@
               }
             
               /* Education Section */
+               .education-section{
+                display: flex;
+                height: 140vh;
+                flex-direction: column !important;
+                align-items: center;
+                }
+              
               .main-education-container {
                 display: flex;
                 flex-direction: column;
@@ -551,12 +558,7 @@
                 transform: translateY(-50%);
               }
 
-              .education-section{
-                display: flex;
-                height: 140vh;
-                flex-direction: column !important;
-                align-items: center;
-            }
+             
 
             .education-section .education-icon{
                 display: flex;
@@ -592,13 +594,21 @@
               
             }
 
-
             .card-more{
-                flex-direction: column !important;
-                align-items: center !important;
-                padding: 1rem !important;
-                margin-top: -25rem !important;
-                width: 350px !important;
+                margin-top: 2rem !important;
+                padding: 1rem;
+                width: 300px !important;
+                height: auto !important;
+                border: 2px solid var(--main-txt-color);
+                background: transparent;
+                border-radius: 4px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(2.9px);
+                -webkit-backdrop-filter: blur(2.9px);
+                transition: transform 0.3s ease;
+                overflow: visible !important;
+                z-index: 1;
+                cursor: pointer;
             }
 
              .card-more p{

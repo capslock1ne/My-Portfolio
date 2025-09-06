@@ -719,8 +719,8 @@ textarea:focus {
 @media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  
-        height: 150vh;
-        padding: 15rem 2rem !important;
+        height: 160vh;
+        padding: 4rem 2rem !important;
         justify-content: center;
         margin: 0 auto !important;
         flex-direction: column !important;
@@ -776,28 +776,35 @@ textarea:focus {
         padding-left: 0 !important;
     }
 
-    .about-title-more,.about-icon-more{
-       margin-left: 6rem !important;
+    .about-title-more{
+       margin-right: 16rem !important;
+       margin-top: 2rem !important;
        
     }
 
+    .about-icon-more{
+        margin-top: 9rem !important;
+        
+        
+    }
     .about-icon-more img{
-        margin-left: 5rem !important;
+        margin-right: 2rem !important;
+       
     }
     .about-hero-image-more img {
         max-width: 50%;
         height: auto;
         margin: 0 auto !important;
-        transform: translate(-240%, -70%) !important;
+        transform: translate(-275%, 10%) !important;
     }
 
     .about-icon-more{
         display: flex;
-       margin-left: -8rem !important;
+       margin-left: -12rem !important;
        
     }
     .about-icon-more img{
-        transform: translateY(-250%) !important;
+        transform: translateY(-260%) !important;
         width: auto;
         height: 40%;
     }
@@ -805,18 +812,18 @@ textarea:focus {
    .about-title-more{
        display:  flex;
          flex-direction: column;
-         transform: translate(-30%, -250%) !important;
+         transform: translate(-40%, -250%) !important;
    }
 
 
     .description-more {
         align-items: center !important;
         text-align: center !important;
-        padding: 10rem !important;
+        padding: 9.5rem !important;
         max-width: 85%;
         padding-top: 2rem !important;
         justify-content: center !important;
-        transform: translate(-40%, -15%) !important;
+        transform: translate(-42%, -20%) !important;
     }
 
     .description-more p{
@@ -826,14 +833,12 @@ textarea:focus {
 
     .contacts {
         display: flex;
-        flex-direction:row  !important;
+        flex-direction: row  !important;
         align-items: center; 
         text-align: center;
-        margin-top: 2rem !important;
-        margin: 0 auto !important;
-        transform: translateX(42%) !important;
+        margin-top: -22rem !important;
+        transform: translateX(55%) !important;
         justify-content: center !important;
-      
         
     }
 
@@ -842,14 +847,15 @@ textarea:focus {
         text-align: center !important;
         justify-content: center !important;
         align-items: center !important;
-        margin-top: -25rem !important;
-
+        margin-top: -30rem !important;
+      
         
         
     }
 
+
     .contact-no, .email-address {
-        margin: -15rem 25rem 0 0 !important;
+        margin: -15rem 30rem 0 0 !important;
         flex-direction: row !important;
         padding: 5rem !important;
         gap: 0.5rem !important;
@@ -864,16 +870,17 @@ textarea:focus {
     }
 
     .contact-no img{
-       margin-top: 2rem !important;
+       margin-top: -1rem !important;
     }
     .email-address img{
-       margin-top: 2rem !important;
+       margin-top: -1rem !important;
     }
 
     .contacts h4 , .contacts span{
         font-size: 1.3rem !important;
-        margin: -23rem 0 0 0 !important;
-        transform: translateX(10%) !important;
+        margin: -25rem 0 0 0 !important;
+        flex-direction: column !important;
+        transform: translateX(20%) !important;
     }
 
     .contact-details {
@@ -885,23 +892,24 @@ textarea:focus {
         display: flex;
         transform: translateX(-33%) !important;
     }
+  
+    .message-btn {
+      display: flex !important;
+      justify-content: center !important;  
+      align-items: center !important;     
+      width: 100% !important; 
+      padding: 35rem !important;
+     
+  }
 
-    .message-btn{
-        display: flex;
-        position: relative;
-        
-        
-    }
+  .message-btn button {
+    font-size: 1rem;          
+    padding: 0.8rem 1rem;
+    cursor: pointer;
+    
+  }
 
-     #msg-btn {
-        text-align: center !important;
-        justify-content: center !important;
-        align-items: center !important;
-        transform: translateX(-30%) !important;
-        
-       
-    }
-
+     
     .icons-container-more {
         flex-direction: row; 
         justify-content: center; 
