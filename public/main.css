@@ -252,7 +252,7 @@
             .typing-effect{
                 
                     position: relative;
-                    margin-top: -50rem;
+                    margin-top: -45rem;
                 }
 
                 .typing-text::after {
@@ -483,6 +483,7 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 2rem;
+                transform: translateY(-30%) !important;
               }
             
               .skills-icon {
@@ -535,8 +536,8 @@
                
               /* Education Section */
                .education-section {
-                min-height: auto;
-                padding: 5rem 1.5rem;
+                min-height: 120vh !important;
+                padding: 5rem 2rem;
                 text-align: center;
                 display: flex;
                 flex-direction: column;
@@ -547,6 +548,7 @@
                  display: flex;
                  flex-direction: column;
                  align-items: center;
+                
                 }
 
                .edu-container {
@@ -554,31 +556,36 @@
                  width: 100%;
              }
 
-                .education-icon {
-    display: flex;
-    justify-content: center;
-    margin: 1rem auto;
-    max-height: 550px !important;
-    width: auto;
-  }
+                .education-icon img{
+                 display: flex;
+                 justify-content: center;
+                 margin: 1rem auto;
+                 height: auto !important;
+                 width: 50px !important;
+               }
 
-  .header-title {
-    margin-top: 20rem;
-  }
+                .header-title {
+                 margin-top: 20rem !important;
+                }
 
-  .education-intro {
-    font-size: 0.9rem;
-    margin-top: 1rem;
-    line-height: 1.4;
-  }
+                .education-intro {
+                  font-size: 0.9rem !important;
+                  margin-top: -2rem !important;
+                  line-height: 1.4 !important;
+                  text-align: center !important;
+                  padding: -5rem !important;
+                  width: 370px !important;
+                 }
 
-  .fourth-title {
-    margin-top: 2.5rem;
-  }
+                .fourth-title {
+                 margin: 5rem 0 0 0 !important;
+                 flex-direction: column !important;
+                 transform: translateY(20%) !important;
+                }
 
-  .fourth-title p {
-    margin-top: 1rem;
-  }
+                 .fourth-title p {
+                  margin-top: 2rem !important;
+                }
 
   .icon img {
     margin-top: 1rem;
@@ -586,7 +593,7 @@
   }
 
   .btn-more {
-    margin-top: 1.5rem;
+    margin-top: 45rem !important;
     display: flex;
     justify-content: center;
   }
@@ -1008,7 +1015,7 @@
             font-size: 0.8rem; 
             font-weight: bold;
             padding: 0.3rem 0.8rem;
-            color: rgb(37, 100, 235);
+            color: var(--main-txt2-color);
             border: none;
             margin: 0.2rem;
             outline: none;
