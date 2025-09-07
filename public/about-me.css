@@ -719,8 +719,8 @@ textarea:focus {
 @media (min-width: 361px) and (max-width: 412px)  {
 
     .about-section-more {  
-        height: 160vh;
-        padding: 4rem 2rem !important;
+        height: auto !important;
+        padding: 5rem 2rem !important;
         justify-content: center;
         margin: 0 auto !important;
         flex-direction: column !important;
@@ -734,34 +734,34 @@ textarea:focus {
     }
 
     .navbar-collapse {
-                 position: fixed;
-                 top: 0;
-                 right: -250px; 
-                 width: 230px;
-                 border-radius: 1rem;
-                 height: 50vh;
-                 background-color: var(--header-bg-color); 
-                 padding-top: 70px !important; 
-                 transition: right 0.3s ease;
-                }
+        position: fixed;
+        top: 0;
+        right: -250px; 
+        width: 230px;
+        border-radius: 1rem;
+        height: 50vh;
+        background-color: var(--header-bg-color); 
+        padding-top: 70px !important; 
+        transition: right 0.3s ease;
+    }
 
-                .navbar-collapse.show {
-                  right: 0; 
-                  }
+    .navbar-collapse.show {
+        right: 0; 
+    }
 
-               .navbar-nav {
-                 flex-direction: column;
-                 margin-left: 1rem !important;
+    .navbar-nav {
+        flex-direction: column;
+        margin-left: 1rem !important;
                   
-                }
+    }
 
-                .navbar-nav .nav-item {
-                  margin: 5px 0;
-              }
+    .navbar-nav .nav-item {
+        margin: 5px 0;
+    }
 
-                 .navbar-toggler {
-                 z-index: 1051; 
-             }
+    .navbar-toggler {
+        z-index: 1051; 
+    }
 
     .logo-main{
         margin-left: 2rem;
@@ -777,7 +777,7 @@ textarea:focus {
     }
 
     .about-title-more{
-       margin-right: 16rem !important;
+       margin-right: 28rem !important;
        margin-top: 2rem !important;
        
     }
@@ -792,21 +792,22 @@ textarea:focus {
        
     }
     .about-hero-image-more img {
-        max-width: 50%;
+        max-width: 60%;
         height: auto;
         margin: 0 auto !important;
-        transform: translate(-275%, 10%) !important;
+        transform: translate(-280%, 10%) !important;
     }
 
     .about-icon-more{
-        display: flex;
-       margin-left: -12rem !important;
+       display: flex;
+       margin-left: -25rem !important;
        
     }
+
     .about-icon-more img{
-        transform: translateY(-260%) !important;
+        transform: translateY(-295%) !important;
         width: auto;
-        height: 40%;
+        height: 40px !important;
     }
 
    .about-title-more{
@@ -820,10 +821,10 @@ textarea:focus {
         align-items: center !important;
         text-align: center !important;
         padding: 9.5rem !important;
-        max-width: 85%;
+        max-width: 70%;
         padding-top: 2rem !important;
         justify-content: center !important;
-        transform: translate(-42%, -20%) !important;
+        transform: translate(-55%, -20%) !important;
     }
 
     .description-more p{
@@ -831,13 +832,14 @@ textarea:focus {
         padding: 10rem 2rem !important;
     }
 
-    .contacts {
+   
+     .contacts {
         display: flex;
-        flex-direction: row  !important;
+        flex-direction: column !important;
         align-items: center; 
         text-align: center;
-        margin-top: -22rem !important;
-        transform: translateX(55%) !important;
+        margin-top: -12rem !important;
+        transform: translateX(-33%) !important;
         justify-content: center !important;
         
     }
@@ -847,13 +849,19 @@ textarea:focus {
         text-align: center !important;
         justify-content: center !important;
         align-items: center !important;
-        margin-top: -30rem !important;
-      
-        
-        
+        margin-top: -10rem !important;
+
     }
 
-
+   .contact-details {
+        align-items: center !important; 
+        justify-content: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+        margin-top: 8rem !important;
+        display: flex;
+        transform: translateX(25%) !important;
+    }
     .contact-no, .email-address {
         margin: -15rem 30rem 0 0 !important;
         flex-direction: row !important;
@@ -865,15 +873,15 @@ textarea:focus {
     .contact-me img {
         width: 30px; 
         height: auto;
-        margin-left: 2rem;
-        margin-top: 2rem !important;
+        margin-left: 12rem;
+        margin-top: -47rem !important;
     }
 
     .contact-no img{
-       margin-top: -1rem !important;
+       margin-top: -2rem !important;
     }
     .email-address img{
-       margin-top: -1rem !important;
+       margin-top: -2rem !important;
     }
 
     .contacts h4 , .contacts span{
@@ -883,31 +891,24 @@ textarea:focus {
         transform: translateX(20%) !important;
     }
 
-    .contact-details {
-        align-items: center !important; 
-        justify-content: center !important;
-        text-align: center !important;
-        margin: 0 auto !important;
-        padding-top: 0rem !important;
-        display: flex;
-        transform: translateX(-33%) !important;
-    }
-  
-    .message-btn {
-      display: flex !important;
-      justify-content: center !important;  
-      align-items: center !important;     
-      width: 100% !important; 
-      padding: 35rem !important;
-     
-  }
-
-  .message-btn button {
-    font-size: 1rem;          
-    padding: 0.8rem 1rem;
-    cursor: pointer;
     
-  }
+  
+     .message-btn {
+        display: flex !important;           
+        justify-content: center !important; 
+        align-items: center !important;     
+        width: 100% !important;
+        margin-right: 34rem !important;
+        margin-top: -38rem !important;
+     }
+
+
+       .message-btn button {
+         display: inline-block !important;
+         margin: 0 auto !important;
+         padding: 0.8rem 1.2rem !important;    
+         
+       }
 
      
     .icons-container-more {
@@ -915,6 +916,7 @@ textarea:focus {
         justify-content: center; 
         visibility: hidden;
     }
+
     .vertical-more,.vertical-more-down{
         visibility: hidden;
     }
@@ -949,9 +951,9 @@ textarea:focus {
         padding: 10px 30px;
       }
     
-      input[type=message-box]{
-        width: 100%;
-        padding: 10px 100px;
+     .message-box{
+        width: 100% !important;
+        padding: 10px 30px !important;
       
       }
     
