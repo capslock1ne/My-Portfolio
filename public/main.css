@@ -559,13 +559,13 @@
                 .education-icon img{
                  display: flex;
                  justify-content: center;
-                 margin: 1rem auto;
+                 margin: 10rem auto;
                  height: auto !important;
                  width: 50px !important;
                }
 
                 .header-title {
-                 margin-top: 20rem !important;
+                 margin-top: 5rem !important;
                 }
 
                 .education-intro {
@@ -593,7 +593,7 @@
   }
 
   .btn-more {
-    margin-top: 45rem !important;
+    margin-top: 2rem !important;
     display: flex;
     justify-content: center;
   }
@@ -606,10 +606,12 @@
   }
 
   .card-more {
+    display: flex;
     margin: 1rem auto;
     padding: 1rem;
+    height: auto !important;
     width: 90%;
-    max-width: 300px;
+    max-width: 300px !important;
     border: 2px solid var(--main-txt-color);
     background: transparent;
     border-radius: 4px;
@@ -1015,7 +1017,7 @@
             font-size: 0.8rem; 
             font-weight: bold;
             padding: 0.3rem 0.8rem;
-            color: var(--main-txt2-color);
+            color: var(--main-txt-color);
             border: none;
             margin: 0.2rem;
             outline: none;
