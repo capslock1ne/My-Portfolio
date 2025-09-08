@@ -252,7 +252,7 @@
             .typing-effect{
                 
                     position: relative;
-                    margin-top: -45rem;
+                    margin-top: -50rem;
                 }
 
                 .typing-text::after {
@@ -433,7 +433,7 @@
             
               .typing-effect {
                 position: relative;
-                transform: translateY(-15%) !important;
+                transform: translateY(-8%) !important;
                 text-align: center;
               }
             
@@ -483,7 +483,6 @@
                 flex-direction: column;
                 align-items: center;
                 padding: 2rem;
-                transform: translateY(-30%) !important;
               }
             
               .skills-icon {
@@ -533,100 +532,92 @@
                 text-align: center;
               }
             
-               
               /* Education Section */
-               .education-section {
-                min-height: 120vh !important;
-                padding: 5rem 2rem;
-                text-align: center;
+               .education-section{
+                display: flex;
+                height: 140vh;
+                flex-direction: column !important;
+                align-items: center;
+                }
+              
+              .main-education-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+              }
+            
+              .edu-container {
+                margin-top: 10rem;
+              }
+            
+              .fourth-title .icon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transform: translateY(-5%) !important;
+              }
+
+             
+
+            .education-section .education-icon{
+                display: flex;
+                margin-top: -5rem;
+                height: 600px !important;
+                width: auto;
             }
 
-                .main-education-container {
-                 display: flex;
-                 flex-direction: column;
-                 align-items: center;
+            .education-section .header-title {
+                margin-top: 5rem !important;
                 
-                }
+            }
 
-               .edu-container {
-                 margin-top: 2rem;
-                 width: 100%;
-             }
+            .education-intro{
+                font-size: 0.8rem;
+                margin-top: -22rem !important;
+            }
 
-                .education-icon img{
-                 display: flex;
-                 justify-content: center;
-                 margin: 10rem auto;
-                 height: auto !important;
-                 width: 50px !important;
-               }
+            .education-container {
+              transform: translateY(25%) !important;
+            }
+          
+            .fourth-title{
+                flex-direction: column !important;
+                margin-top: 12rem !important;
+                text-align: center;
+            }
 
-                .header-title {
-                 margin-top: 5rem !important;
-                }
+            .fourth-title p{
+                margin-top: 2rem !important;
+            }
 
-                .education-intro {
-                  font-size: 0.9rem !important;
-                  margin-top: -2rem !important;
-                  line-height: 1.4 !important;
-                  text-align: center !important;
-                  padding: -5rem !important;
-                  width: 370px !important;
-                 }
+             .collpase-btn{
+               margin-top: 155rem !important;
+               
+              
+            }
 
-                .fourth-title {
-                 margin: 5rem 0 0 0 !important;
-                 flex-direction: column !important;
-                 transform: translateY(20%) !important;
-                }
+            .card-more{
+                margin-top: 40rem !important;
+                padding: 1rem;
+                width: 300px !important;
+                height: auto !important;
+                border: 2px solid var(--main-txt-color);
+                background: transparent;
+                border-radius: 4px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(2.9px);
+                -webkit-backdrop-filter: blur(2.9px);
+                transition: transform 0.3s ease;
+                overflow: visible !important;
+                z-index: 1;
+                cursor: pointer;
+            }
 
-                 .fourth-title p {
-                  margin-top: 2rem !important;
-                }
-
-  .icon img {
-    margin-top: 1rem;
-    max-width: 60px;
-  }
-
-  .btn-more {
-    margin-top: 2rem !important;
-    display: flex;
-    justify-content: center;
-  }
-
-  #collapseEdu {
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  .card-more {
-    display: flex;
-    margin: 1rem auto;
-    padding: 1rem;
-    height: auto !important;
-    width: 90%;
-    max-width: 300px !important;
-    border: 2px solid var(--main-txt-color);
-    background: transparent;
-    border-radius: 4px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(2.9px);
-    transition: all 0.3s ease;
-    cursor: pointer;
-  }
-
-  .card-more p {
-    font-size: 0.9rem;
-    text-align: center;
-    line-height: 1.5;
-  }
-
+             .card-more p{
+                font-size: 0.9rem !important;
+                text-align: center;
+            }
             
               /* Projects Section */
               .projects-section .container {
@@ -1017,7 +1008,7 @@
             font-size: 0.8rem; 
             font-weight: bold;
             padding: 0.3rem 0.8rem;
-            color: var(--main-txt-color);
+            color: rgb(37, 100, 235);
             border: none;
             margin: 0.2rem;
             outline: none;
