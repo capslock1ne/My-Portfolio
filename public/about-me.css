@@ -298,16 +298,22 @@
 
     .contacts {
         display: flex;
+        background: rgba(244, 168, 222, 0.03);
         flex-direction: column !important;
+        justify-content: center;
         gap: 1rem;
+        width: 450px;
+        height: auto !important;
+        border-radius: 1rem;
         align-items: center;
         margin-top: -14rem;
-        margin-right: 15rem;
+        margin-right: 5rem;
         
     }
     
     .contact-me {
-       margin-left: -22rem;
+       margin-left: -15rem;
+       margin-top: 1rem;
         
     }
 
@@ -316,7 +322,7 @@
         color: var(--main-txt-color);
         font-weight: bold;
         margin: -5rem;
-        margin-right: 2rem;
+        margin-right: -5rem;
     }
 
     .contacts h4 span{
@@ -325,7 +331,7 @@
         font-weight: bold;
     }
     .contact-me img {
-        width: 50px; 
+        width: 40px; 
         height: auto;
         margin-top: -2rem;
     }
@@ -335,7 +341,7 @@
         flex-direction: column;
         gap: 2rem;
         padding-top: 5rem;
-        margin-left: -8rem;
+        margin-left: -2rem;
     }
     
     .contact-no,
@@ -543,7 +549,7 @@
     position: relative;
     align-items: center;
     justify-content: center;
-    right: 41%;
+    right: -5%;
     top: 40%;
 }
 
@@ -718,20 +724,30 @@ textarea:focus {
 
 @media (min-width: 361px) and (max-width: 412px)  {
 
-    .about-section-more {  
-        height: auto !important;
-        padding: 5rem 2rem !important;
-        justify-content: center;
-        margin: 0 auto !important;
-        flex-direction: column !important;
-        overflow: hidden;
-        text-align: center;
-    }
-    .about-main-more {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+    
+    .about-section-more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 10rem;
+    text-align: center;
+    height: auto;
+  }
+   .about-main-more {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .about-left-container-more,
+  .about-right-container-more {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  
 
     .navbar-collapse {
         position: fixed;
@@ -776,6 +792,12 @@ textarea:focus {
         padding-left: 0 !important;
     }
 
+    .abt-title-more{
+        flex-direction: column !important;
+        transform: translateX(-190%) !important;
+        
+    }
+
     .about-title-more{
        margin-right: 28rem !important;
        margin-top: 2rem !important;
@@ -792,10 +814,10 @@ textarea:focus {
        
     }
     .about-hero-image-more img {
-        max-width: 60%;
+        max-width: 70%;
         height: auto;
         margin: 0 auto !important;
-        transform: translate(-280%, 10%) !important;
+        transform: translate(-220%, 10%) !important;
     }
 
     .about-icon-more{
@@ -810,21 +832,22 @@ textarea:focus {
         height: 40px !important;
     }
 
+   
    .about-title-more{
        display:  flex;
-         flex-direction: column;
-         transform: translate(-40%, -250%) !important;
+         flex-direction: column !important;
+         transform: translate(50%, -160%) !important;
    }
 
 
     .description-more {
         align-items: center !important;
         text-align: center !important;
-        padding: 9.5rem !important;
-        max-width: 70%;
+        padding: 2.5rem !important;
+        max-width: 420% !important; 
         padding-top: 2rem !important;
         justify-content: center !important;
-        transform: translate(-55%, -20%) !important;
+        transform: translate(-68%, -20%) !important;
     }
 
     .description-more p{
@@ -838,10 +861,17 @@ textarea:focus {
         flex-direction: column !important;
         align-items: center; 
         text-align: center;
-        margin-top: -12rem !important;
-        transform: translateX(-33%) !important;
+        padding: 5rem 2rem!important;
+        width: 350px !important;
+        margin-top: -25rem !important;
+        transform: translate(-90%, -10%) !important;
         justify-content: center !important;
         
+    }
+
+    .contacts .contact-title, .contacts span{
+        margin-top: -2.5rem !important;
+        margin-right: 2rem !important;
     }
 
     .contact-me {
@@ -849,10 +879,15 @@ textarea:focus {
         text-align: center !important;
         justify-content: center !important;
         align-items: center !important;
-        margin-top: -10rem !important;
+        margin-top: -6rem !important;
+        padding-left: 10rem !important;
+    
 
     }
 
+    .contact-title{
+        transform: translateY(35%) !important;
+    }
    .contact-details {
         align-items: center !important; 
         justify-content: center !important;
@@ -860,10 +895,10 @@ textarea:focus {
         margin: 0 auto !important;
         margin-top: 8rem !important;
         display: flex;
-        transform: translateX(25%) !important;
+        transform: translateX(35%) !important;
     }
     .contact-no, .email-address {
-        margin: -15rem 30rem 0 0 !important;
+        margin: 0 !important;
         flex-direction: row !important;
         padding: 5rem !important;
         gap: 0.5rem !important;
@@ -873,8 +908,8 @@ textarea:focus {
     .contact-me img {
         width: 30px; 
         height: auto;
-        margin-left: 12rem;
-        margin-top: -47rem !important;
+        transform: translateX(-150%) !important;
+        margin-top: 2rem !important;
     }
 
     .contact-no img{
@@ -1054,6 +1089,40 @@ textarea:focus {
       }
 
 }
+
+  @media (min-width: 1024px) and (max-width: 1440px) {
+ 
+    .about-hero-image-more {
+        margin-left: 2rem !important;
+       
+    }
+
+    .about-right-container-more{
+        margin-left: -20rem !important;
+        padding-left: 2rem !important;
+    }
+
+    .description-more{
+        padding: -5rem !important;
+        transform: translateX(-5%) !important;
+        margin-top: -2rem !important;
+
+    }
+    .abt-title-more{
+        margin-left: 5rem !important;
+        margin-top: -2.8rem !important;
+    }
+    .about-icon-more{
+        padding-left: 5rem !important;
+    }
+
+    .contacts{
+        margin-right: 5rem !important;
+        margin-top: -2rem !important;
+        height: auto !important;
+    }
+     
+  }
 
 
 

@@ -716,7 +716,96 @@
           }
           
       
-      
+       /* Laptops (between 1024px and 1440px) */
+             @media (min-width: 1024px) and (max-width: 1440px) {
+                 .home-container {
+                  padding: 2rem 10% !important;   
+                 }
+
+                 .left-content-container{
+                    transform: translateX(-30%) !important;
+                    margin-top: -3rem !important;
+                 }
+
+                 .right-content-container{
+                    margin: -1rem 0 0 16rem !important;
+                    
+                 }
+
+                 .typing-effect{
+                    transform: translateY(20%) !important;
+                 }
+
+                 .container-cv{
+                    transform: translateY(-2%) !important;
+                 }
+
+                 .icons-container{
+                    margin: 29.5rem 27rem 0 2rem !important;
+                 }
+ 
+                
+                 /* Skills Section */
+                    .skills-container {
+                        padding: 5rem 2rem !important;
+                        margin-top: -5rem !important;
+                    }
+
+                    .header-title-skills{
+                        margin-top: 15rem !important;
+                    }
+                    .skills-intro{
+                        margin-top: 7rem !important;
+                    }
+                 
+                    .box-container{
+                        padding: 15rem !important;
+                        margin-top: -4rem !important;
+                    }
+
+                    /* Project Section */
+
+                    .projects-section .container{
+                        margin-top: 12rem !important;
+                        
+                    }
+
+                    .projects-intro{
+                        margin-top: -5rem !important;
+                        
+                    }
+
+                    .main-card-container{
+                        margin-top: 3rem !important;
+                    }
+
+                    /* Education Section */
+
+                    .main-education-container{
+                        margin-top: -2rem !important;
+                    }
+
+                    .main-education-container .header-title{
+                        margin-top: 8rem !important;
+                    }
+
+                    .education-container{
+                        margin-top: 5rem !important;
+                        
+                    }
+
+                    .collapse-container{
+                        margin-top: 10rem !important;
+                    }
+
+                    .card-more{
+                        margin-top: 5rem !important;
+                    }
+
+
+                 
+              }
+
                
         /* SKILLS */
 
