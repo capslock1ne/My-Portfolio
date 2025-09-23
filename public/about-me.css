@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 
     *{
@@ -10,7 +10,7 @@
         scroll-behavior: smooth;
         height: 100%;
         text-decoration: none;
-        font-family: "Geologica", sans-serif;
+        font-family: "Ubuntu";
         text-transform: capitalize;
         transition: all 0.5s linear;
         
@@ -42,7 +42,7 @@
 
     .header{
         position: sticky;
-        height: 12%;
+        height: 10%;
         width: 100%;
         padding: 1rem 10%;
         z-index: 1000;
@@ -321,8 +321,8 @@
         justify-content: center;
         gap: 1rem;
         width: 450px;
-        height: auto !important;
         border-radius: 1rem;
+        height: 200px;
         align-items: center;
         margin-top: -14rem;
         margin-right: 5rem;
@@ -377,7 +377,7 @@
     .contact-details img {
         width: 24px; 
         height: auto;
-        margin-top: -1rem; 
+        margin-top: -2rem; 
         margin-left: 2rem;
     }
     
@@ -389,6 +389,7 @@
         color: var(--main-txt-color);
     }
 
+ 
     
     .icons-container-more {
         display: flex;
@@ -614,6 +615,7 @@ textarea {
   border-radius: 5px;
   font-size: 1rem;
   padding-left: 20px;
+  text-transform: none;
   color: var(--main-txt-color);
   border: 2px solid rgb(182, 182, 182);
   background: transparent;
@@ -701,16 +703,18 @@ textarea:focus {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding: 5rem;
-    transform: translateY(50%);
+    padding: 2rem;
     margin-top: 15rem;
     border: 2px solid var(--main-txt2-color);
     border-radius: 12px;
-    max-width: 600px;
+    max-width: 500px;
     width: 100%;
     
   }
 
+  .container h2{
+    font-size: 1.7rem;
+  }
   .container h2, .container b{
     color: var(--main-txt-color);
   }
@@ -737,8 +741,8 @@ textarea:focus {
 
   .modal-content .close{
     position: absolute;
-    top: -4rem;
-    right: -2rem;
+    top: -2rem;
+    right: -1rem;
     font-size: 2rem;
     color: var(--main-txt2-color);
     cursor: pointer;
