@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const msgBtn = document.getElementById("msg-btn");
     const cancelBtn = document.querySelector(".cancelbtn");
     const closeBtn = document.querySelector(".close");
+    const popUp = document.querySelector(".pops-up-msg-container");
 
     msgBtn.addEventListener("click", function (){
          modal.classList.add("active");
