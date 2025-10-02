@@ -216,8 +216,8 @@
         }
     .about-hero-image-more img{
         margin-top: 2rem;
-        width: 290px;       
-        height: 350px;
+        width: 250px;       
+        height: 300px;
         object-fit: cover;
         margin-right: 15rem;
         filter: grayscale(100%);
@@ -233,15 +233,15 @@
 
     .about-hero-img-grad{
         display: flex;
-        margin-left: -30rem;
-        margin-top: 20rem;
+        margin-left: -28rem;
+        margin-top: 18rem;
     }
 
     .about-hero-img-grad img{
          width: auto;
          height: 50%;
          z-index: 1;
-         cursor: pointer;
+         cursor: pointer !important;
     }
     .about-title-more{
         margin-right: 15rem;
@@ -1151,25 +1151,33 @@ textarea:focus {
     }
 
     .description-more{
-        padding: -5rem !important;
+        padding: 5rem !important;
         transform: translateX(-5%) !important;
-        margin-top: -2rem !important;
+        margin-top: -5rem !important;
 
     }
+
+    .about-left-container-more{
+         margin-left: -10rem !important;
+    }
     .abt-title-more{
-        margin-left: 5rem !important;
+        margin-left: 8rem !important;
         margin-top: -2.8rem !important;
     }
     .about-icon-more{
-        padding-left: 5rem !important;
+        padding-left: 8rem !important;
     }
 
     .contacts{
         margin-right: 5rem !important;
         margin-top: -2rem !important;
-        height: auto !important;
+        height: 200px !important;
+        width: 350px !important;
     }
      
+    .side-icons-container{
+        margin-left: -18rem !important;
+    }
   }
 
 

@@ -116,7 +116,7 @@
         }
 
         .nav-link {
-            font-size: 1rem;
+            font-size: 0.9rem;
             color: var(--main-txt-color);
             display: inline-block;
             text-decoration: none;
@@ -286,7 +286,7 @@
         .download-cv  {
                 background-color: transparent;
                 text-decoration: none;
-                font-size: 0.9rem; 
+                font-size: 0.8rem; 
                 font-weight: bold;
                 margin-top: 1rem;
                 padding: 0.5rem 1rem;
@@ -476,46 +476,26 @@
 
             
               /* Skills Section */
-              .skills-container {
+              .skills-section {
                 display: flex;
-                height: 130vh;
-                flex-direction: column;
+                height: auto !important;
+                flex-direction: column  !important;
                 align-items: center;
-                padding: 2rem;
-              }
-            
-              .skills-icon {
-                display: flex;
-                position: relative;
                 justify-content: center;
-                padding-bottom: 2rem !important;
-                transform: translateY(10%) !important;
                 
               }
-
-              .skills-intro{
-                padding: 12rem;
-                margin-top: 12rem;
-                font-size: 0.8rem;
-                text-align: center;
-                color: var(--main-txt-color);
-              }
+            
            
+
+             
               .header-title-skills {
-                transform: translateY(-80%);
+                text-align: center !important;
+                align-items: center !important;
+                justify-content: center !important;
+                transform: translateX(-120%) !important;
+                margin-top: 10rem !important;
               }
             
-              .box-container {
-                display: grid;
-                flex-direction: column;
-                grid-template-columns: repeat(5, 1fr) !important;
-                max-width: 550px !important;
-                transform: translateY(-80%) !important;
-                margin-right: 18rem;
-                padding: 10rem !important;
-                justify-content: center;
-                text-align: center;
-              }
             
                .box {
                  display: flex;
@@ -524,12 +504,76 @@
                 }
 
 
+
               .box-container .box img{
-                width: 25px !important;
+                width: 20px !important;
                 height: auto !important;
-                margin: 0 auto;
+                margin: 0 auto !important;
                 text-align: center;
               }
+
+                .services .box-container{
+                 display: flex !important;
+                 flex-direction: row !important;
+                 align-items: center; 
+                 margin:  0 auto !important;
+                 
+       }
+
+
+       .service-title{
+        margin-top: 5rem !important;
+         transform: translateX(-30%);
+         font-size: 2rem !important;
+       }
+               
+       .service-box { 
+        
+        flex: 0 0 auto !important;
+        width: 100% !important;
+        height: 300px !important; 
+         padding: 1rem !important;
+         border-radius: 20px;
+         justify-content: center !important;
+         align-items: center !important;
+         margin-right: 30rem !important;
+         font-size: 0.8rem !important;
+         transform: translateY(150%) !important;
+      
+}
+
+
+         .service-box .service-icon img {
+           width: 80px !important;   
+            height: auto;
+           margin-bottom: 5rem;
+           }
+
+
+.service-box h3 {
+  font-size: 1rem;   
+  margin-bottom: 0.5rem;
+}
+
+.service-box p {
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+ 
+       .skills-container .box-container{
+                display: grid !important;
+                grid-template-columns: repeat(4, 1fr) !important;
+                max-width: 100% !important;
+                padding: 1rem !important;
+                gap: 0.5rem !important;
+                justify-content: center !important;
+                text-align: center !important; 
+                align-items: center !important;
+                margin-left: -30rem !important;
+                margin-top: 45rem !important;
+                
+                
+       }
             
               /* Education Section */
                .education-section{
@@ -714,6 +758,9 @@
               
           }
           
+
+
+          
       
        /* Laptops (between 1024px and 1440px) */
              @media (min-width: 1024px) and (max-width: 1440px) {
@@ -722,17 +769,17 @@
                  }
 
                  .left-content-container{
-                    transform: translateX(-30%) !important;
+                    transform: translateX(-50%) !important;
                     margin-top: -3rem !important;
                  }
 
                  .right-content-container{
-                    margin: -1rem 0 0 16rem !important;
+                    margin: -1rem 0 0 30rem !important;
                     
                  }
 
                  .typing-effect{
-                    transform: translateY(20%) !important;
+                    transform: translateY(10%) !important;
                  }
 
                  .container-cv{
@@ -740,7 +787,15 @@
                  }
 
                  .icons-container{
-                    margin: 29.5rem 27rem 0 2rem !important;
+                    margin: 30rem 15rem 0 2rem !important;
+                 }
+
+                 .hero-image{
+                    margin-top: 3rem !important;
+                 }
+                 .hero-image img{
+                   height: auto !important;
+                   width: 300px !important;
                  }
  
                 
@@ -748,20 +803,51 @@
                     .skills-container {
                         padding: 5rem 2rem !important;
                         margin-top: -5rem !important;
+                        margin-right: 4rem !important;
                     }
 
                     .header-title-skills{
-                        margin-top: 15rem !important;
+                        margin-top: 10rem !important;
+                        margin-right: -2rem !important;
                     }
                     .skills-intro{
                         margin-top: 7rem !important;
                     }
                  
-                    .box-container{
-                        padding: 15rem !important;
-                        margin-top: -4rem !important;
+                   .skills-container .box-container{
+                       
+                        margin-top: 4rem !important;
+                        
                     }
 
+                    .service-title{
+                        transform: translateX(30%) !important;
+                    }
+                    .services .box-container{
+                       margin-left: -30.5rem !important;
+                       
+                    }
+
+                      .service-box {                       
+                         width: 230px !important;
+                         min-height: 220px !important; 
+                         margin: 0.5rem !important;
+                         transform: translateY(50%) !important;
+                    }
+
+                     .service-box h3  {
+                        font-size: 1rem !important;
+                        text-align: center !important;
+                        width: 200px !important;
+                        margin-left: -1rem !important;
+                     }
+                     .service-box p {
+                        font-size: 0.8rem  !important;
+                         margin-left: -1rem !important;
+                        width: 200px;
+                     }
+
+                
                     /* Project Section */
 
                     .projects-section .container{
@@ -810,7 +896,7 @@
 
         .skills-section {
         display: flex;
-        min-height: 120vh;
+        min-height: 150vh;
         width: 100%;
         background-image: var(--background-image);
         background-repeat: no-repeat;
@@ -819,7 +905,7 @@
         align-items: center;
         text-align: center;
         box-sizing: border-box;
-        padding: 4.2rem 2rem;
+        padding: 25rem 2rem;
         position: relative;
         background-position: center;
         
@@ -833,12 +919,59 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.3); 
+            background: rgba(0, 0, 0, 0.6); 
             z-index: 0;
         }
 
+
+        .services{
+           text-align: center;
+           padding: 50px 20px;
+           margin-top: -25rem;
+        }
+
+
+        .service-icon img {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 15px;
+}
+
+
+        
+
+      .service-box { 
+        width: 300px;
+        min-height: 300px; 
+         padding: 2rem;
+         margin: 1rem;
+         border-radius: 20px;
+         background: rgba(218, 190, 206, 0.08); 
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+         text-align: center;
+         backdrop-filter: blur(2px);
+         justify-content: center;
+         align-items: center;
+         color: var(--main-txt-color);
+        
+}
+
+         .service-box  h3{
+            transform: translateY(-60%);
+            color: var(--main-txt2-color);
+            font-size: 1.3rem;
+        }
+     
+        .service-box p{
+          font-size: 0.9rem;
+          transform: translateY(-140%);
+          font-weight: 300;
+}
+        
+       
         .skills-container{
             margin-top: 5rem;
+            transform: translateX(120%) !important;
         }
         .skills-icon {
             display: flex;
@@ -846,11 +979,6 @@
             justify-content: center;
         }
       
-         .skills-container .skills-intro{
-            transform: translateY(-60%);
-            color: var(--main-txt-color);
-            text-align: center;
-         }
        
         .skills-intro span{
             color: var(--main-txt2-color);
@@ -865,10 +993,7 @@
 
         }
 
-        .header-title-skills{
-            margin-top: 17rem;
-        }
-
+      
         .skills-section h1 {
         font-size: 2rem;
         color: var(--main-txt-color);
@@ -901,30 +1026,52 @@
         }
 
         .skills-section .box-container {
-        display: flex;
-        flex-wrap: wrap;
-        transform: translateY(-190%);
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        gap: 1rem;
-        padding: 20rem;
-        justify-content: center;
+                display: grid;
+                flex-direction: column;
+                grid-template-columns: repeat(4, 1fr) !important;
+                max-width: 600px !important;
+                transform: translateY(-70%) !important;
+                padding: 10rem !important;
+                justify-content: center !important;
+                text-align: center !important; 
+                margin-left: -43rem;
 
         }
 
+       .services .box-container{
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         align-items: center !important;
+         justify-content: center !important;
+         transform: translateX(37%) !important;
+          margin-top: -30rem !important;
+       }
+
+  .header-title-skills{
+            margin-top: 20rem;
+            transform: translateX(-205%);
+        }
+
+       .service-title{
+        margin-left: 15rem !important;
+        color: var(--main-txt-color);
+        opacity: 0.9 !important;
+        z-index: 1 !important;
+       }
         .skills-section .box-container .box {
-        width: 85px;
+        width: auto;
         height: 85px;
         border-radius: 0.5rem;
         padding: 1rem;
-        margin: 1rem;
+        transform: translateY(-170%);
+        margin: 0;
         text-align: center;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         position: relative;
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
         display: flex;
-        background: rgba(244, 168, 222, 0.03);
+        background: transparent;
         border-radius: 20px;
-        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        max-width: 1300px;
         backdrop-filter: blur(2.9px);
         -webkit-backdrop-filter: blur(2.9px);
         flex-direction: column;
@@ -933,10 +1080,12 @@
         cursor: pointer;
         }
 
+       
+      
         
         .skills-section .box-container .box img {
         width: auto;
-        height: 50%;
+        height: 60%;
         margin-bottom: 0.5rem;
         }
 
