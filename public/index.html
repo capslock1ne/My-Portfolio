@@ -75,6 +75,11 @@
                 </ul>
               </div>
             </div>
+
+            <div class="contact-btn">
+              <a href="#message"><button>Contact</button></a> 
+            </div>
+
           </nav>
         </header>
 
@@ -205,7 +210,11 @@
               <img src="Images/Bootstrap.png" alt="Bootstrap" />
               <span>Bootstrap</span>
             </div>
-                 
+                
+             <div class="box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+              <img src="Images/react.js.png" alt="React" />
+              <span>React.js</span>
+            </div>
         
 
             <div class="box" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
@@ -262,6 +271,8 @@
               <img src="Images/Git.png" alt="Git" />
               <span>Git</span>
             </div>
+
+            
 
           </div>
 
@@ -324,7 +335,7 @@
                         <button>Bootstrap</button>
                         <button>JavaScript</button> 
                       </p>
-                        <a href="https://n-flix-clone.netlify.app/" target="_blank" class="btn-demo btn-primary">Demo</a>
+                        <a href="https://nflix-clone-proj.netlify.app/" target="_blank" class="btn-demo btn-primary">Demo</a>
                         <a href="https://github.com/capslock1ne/Netflix-Clone.git" target="_blank" class="btn-view btn-primary">View Code</a>
                     </div>  
                   </div>
@@ -381,7 +392,7 @@
             </div>
           </div>
 
-    <p class="education-intro" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <p class="education-intro" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
             With a <span>solid foundation in Information Technology,</span> I’ve gained both <span>theoretical knowledge <br></span>and <span>practical experience</span> 
             that fuel my passion for <span>web development</span> and <span>software solutions.</span>
           </p>
@@ -427,6 +438,49 @@
           </div>
         </div>
       </section>
+
+
+      <!--Contact -->
+
+  <section class="message-form" id="message">
+         
+    <div class="msg-title">
+         <h3>Your Vision. My Code. Let’s Collaborate! <img src="Images/rocket.gif" class="rocket-img" alt="rocket"></h3>
+    </div>
+     
+     <div class="form-container">
+
+      <form class="container-home" id="messageForm">
+        
+        <h2>Let's connect</h2>
+        <input type="text" class="email-input" placeholder="Enter your email" name="email" required >
+       
+        <label for="Leave-msg-home"><b>Message:</b></label>
+        <textarea  class="message-box-home" placeholder="Type something..." name="lmsg" required></textarea>
+    
+        <button class="send-btn-home" type="submit">Send <i class="bi bi-send"></i></button>
+   
+        <button type="button" class="cancelbtn-home">Cancel</button>
+       
+    </form>
+     </div>
+    
+   
+
+     <!--Pops up notification-->
+
+     <div  class="pops-up-msg-container-home" style="display: none;">
+
+       <div class="msg-box-home">
+         <p id="pop-up-message"></p>
+       </div>
+       
+     </div>
+   
+   
+    
+        
+       </section>
 
       <!-- Footer -->
       <footer class="footer">
