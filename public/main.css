@@ -1929,3 +1929,34 @@ textarea:focus {
   
 
   
+.pops-up-msg-container-home{
+    display: flex;
+    margin:  0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.pops-up-msg-container-home .msg-box-home{
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+     opacity: 1;
+     transform: translate(200%,250%);
+     width: 400px;
+     height: 150px;
+     border:  2px solid var(--main-txt2-color);
+     background: transparent;
+     border-radius: 10px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.9px);
+    padding: 2rem;
+     cursor: pointer;  
+
+}
+.pops-up-msg-container-home .msg-box-home.fade-out{
+   opacity: 0;
+}
+.pops-up-msg-container-home .msg-box-home p{
+    color: var(--main-txt-color);
+}
+
