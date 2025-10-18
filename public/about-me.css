@@ -23,7 +23,7 @@
         --text-light-color:rgb(97, 97, 97);
         --main-txt2-color: rgb(240, 170, 205);
         --header-bg-color:rgb(31, 30, 30);
-        --background-image: url('./Images/about-background.jpg');
+        
         
 
     }
@@ -34,6 +34,8 @@
         scroll-behavior: smooth;
         font-family: "Geologica", sans-serif;
         overflow-x: hidden;
+        background-color: #0a0a0a;
+        background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
         overflow-y: auto;
         
     }

@@ -21,15 +21,20 @@
             --main-txt-color:rgb(224, 224, 224);
             --main-txt2-color: rgb(240, 180, 210);
             --header-bg-color:rgb(31, 30, 30);
-            --background-image: url('./Images/about-background.jpg');
+           
             
 
         }
 
+        
+
+
         html,body{ 
             overflow-x: hidden;
             overflow-y: auto;
-           font-family: "Geologica", sans-serif;
+            background-color: #0a0a0a;
+            background-image: url("https://www.transparenttextures.com/patterns/carbon-fibre-big.png");
+            font-family: "Geologica", sans-serif;
           
         }
         .home-container,
@@ -581,15 +586,15 @@
            }
 
 
-.service-box h3 {
-  font-size: 1rem;   
-  margin-bottom: 0.5rem;
-}
+           .service-box h3 {
+            font-size: 1rem;   
+            margin-bottom: 0.5rem;
+         }
 
-.service-box p {
-  font-size: 0.85rem;
-  line-height: 1.4;
-}
+           .service-box p {
+             font-size: 0.85rem;
+             line-height: 1.4;
+        }
  
        .skills-container .box-container{
                 display: grid !important;
