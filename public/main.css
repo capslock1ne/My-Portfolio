@@ -1139,13 +1139,15 @@
        }
 
   .header-title-skills{
-            margin-top: 20rem;
+            margin-top: 12rem;
             transform: translateX(-205%);
         }
 
        .service-title{
         margin-left: 15rem !important;
         color: var(--main-txt-color);
+        margin-top: -10rem;
+        font-size: 2.2rem !important;
         opacity: 0.9 !important;
         z-index: 1 !important;
        }
