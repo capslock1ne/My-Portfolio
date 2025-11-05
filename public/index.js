@@ -58,6 +58,8 @@ document.addEventListener("DOMContentLoaded", function () {
       });
   });
 
+
+  
   /* MESSAGE FORM */
 
 document.addEventListener("DOMContentLoaded", function (){
