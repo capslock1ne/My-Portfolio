@@ -1,71 +1,53 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // Modal elements
-  const modal = document.getElementById("modal");
-  const msgBtn = document.getElementById("msg-btn");
-  const cancelBtn = document.querySelector(".cancelbtn");
-  const closeBtn = document.querySelector(".close");
-  const popUp = document.querySelector(".pops-up-msg-container");
-  const form = document.getElementById("messageForm");
-  const popMsg = document.getElementById("pop-up-message");
+import express from "express";
+import cors from "cors";
+import path from "path";
+import { fileURLToPath } from "url";
+import dotenv from "dotenv";
+import { createTransport } from "nodemailer";
 
-  // Make sure button exists
-  if (msgBtn) {
-    msgBtn.addEventListener("click", function () {
-      modal.classList.add("active");
-      modal.style.display = "block";
-      popUp.style.display = "none";
-    });
-  } else {
-    console.warn("⚠ ERROR: #msg-btn not found in HTML");
-  }
+dotenv.config();
 
-  cancelBtn?.addEventListener("click", function () {
-    modal.classList.remove("active");
-  });
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-  closeBtn?.addEventListener("click", function () {
-    modal.classList.remove("active");
-  });
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-  window.addEventListener("click", function (event) {
-    if (event.target === modal) {
-      modal.classList.remove("active");
-    }
-  });
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
 
-  // Form submit
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-
-    const email = this.email.value;
-    const message = this.lmsg.value;
-
-    try {
-      const req = await fetch("/api/send-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, message }),
-      });
-
-      const data = await req.json();
-
-      const notify = "Message sent successfully! 🤗";
-
-      popMsg.textContent = notify;
-      popUp.style.display = "block";
-      form.style.display = "none";
-      popUp.classList.remove("fade-out");
-
-      setTimeout(() => {
-        popUp.classList.add("fade-out");
-        form.style.display = "block";
-        popUp.style.display = "none";
-      }, 3000);
-
-      form.reset();
-    } catch (error) {
-      popMsg.textContent = "Failed to send.";
-      console.log(error);
-    }
-  });
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
+
+app.post("/api/send-email", async (req, res) => {
+  const { email, message } = req.body;
+
+  const transporter = createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.EMAIL_USER,
+      pass: process.env.EMAIL_PASS,
+    },
+  });
+
+  const mailOptions = {
+    from: email,
+    to: process.env.EMAIL_USER,
+    subject: "New message from portfolio",
+    text: `From: ${email}\n\nMessage:\n${message}`,
+  };
+ 
+   
+  try {
+
+    await transporter.sendMail(mailOptions);
+    res.json({ notify: "Message sent successfully! 🤗" });
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ notify: "Failed to send message." });
+  }
+});
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
