@@ -115,5 +115,28 @@ form.addEventListener("submit", async function (e) {
 });
 
 
+const  scrollBtn = document.getElementById("scrollTopBtn");
 
+const footer = document.querySelector("footer");
+
+window.addEventListener("scroll", () => {
+   const footerTop = footer.getBoundingClientRect().top
+   const windowHeight = window.innerHeight;
+
+   if(footerTop <= windowHeight) {
+     scrollBtn.classList.add("show");
+
+    } else {
+     scrollBtn.classList.remove("show");  
+   }
+  });
+
+
+  scrollBtn.addEventListener("click", () => {
+
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    }); 
+  });
  
