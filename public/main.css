@@ -2265,14 +2265,15 @@ textarea:focus {
 
     .about-hero-img-grad{
         display: flex;
-        margin-left: -60rem;
-        margin-top: 22rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
     }
 
     .about-hero-img-grad img{
          width: auto;
-         height: 50%;
+         height: 100%;
          z-index: 1;
+         border-radius: 50%;
          cursor: pointer !important;
     }
     .about-title-more{
@@ -2853,12 +2854,12 @@ textarea:focus {
     }
 
     .about-left-container-more{
-        margin-right: 10rem !important;
+        margin-left: -37rem !important;
     }
     
     .about-hero-img-grad {
         display: flex !important;
-        transform: translateX(-30%) !important;
+        transform: translateX(-10%) !important;
     }
 
     .about-hero-img-grad img{
@@ -2877,8 +2878,8 @@ textarea:focus {
     }
 
     .about-title-more{
-       margin-right: 28rem !important;
-       margin-top: -20rem !important;
+       margin-right: 30rem !important;
+       margin-top: -25.2rem !important;
        
     }
 
@@ -2905,7 +2906,7 @@ textarea:focus {
     }
 
     .about-icon-more img{
-        margin-top: -30rem !important;
+        margin-top: -102rem !important;
         width: auto;
         height: 40px !important;
     }
@@ -2914,7 +2915,7 @@ textarea:focus {
    .about-title-more{
        display:  flex;
          flex-direction: column !important;
-         transform: translate(50%, -160%) !important;
+         transform: translate(50%, -1460%) !important;
    }
 
 
@@ -2923,10 +2924,10 @@ textarea:focus {
         align-items: center !important;
         text-align: center !important;
         padding: 2.5rem !important;
-        max-width: 580px !important; 
+        max-width: 620px !important; 
         padding-top: 2rem !important;
         justify-content: center !important;
-        transform: translate(-75%, -20%) !important;
+        transform: translate(-75%, -155%) !important;
     }
 
     .description-more p{
@@ -2943,8 +2944,8 @@ textarea:focus {
         padding: 5rem 2rem!important;
         width: 350px !important;
         height: 300px !important;
-        margin-top: -25rem !important;
-        transform: translate(-100%, -10%) !important;
+        margin-top: -90rem !important;
+        transform: translate(-110%,  -20%) !important;
         justify-content: center !important;
         
     }
@@ -3248,3 +3249,48 @@ textarea:focus {
 }
 
 
+
+#scrollTopBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  background: #000;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  
+}
+
+#scrollTopBtn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+#scrollTopBtn {
+  transform: translateY(10px);
+}
+
+#scrollTopBtn.show {
+  transform: translateY(0);
+}
+
+
+.grid-margin-x {
+  margin-left: -0.9375rem;
+  margin-right: -0.9375rem;
+}
+
+#scrollTopBtn:hover {
+  transform: translateY(-4px);
+}

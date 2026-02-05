@@ -115,28 +115,23 @@ form.addEventListener("submit", async function (e) {
 });
 
 
-const  scrollBtn = document.getElementById("scrollTopBtn");
 
-const footer = document.querySelector("footer");
+ 
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollBtn = document.getElementById("scrollTopBtn");
 
-window.addEventListener("scroll", () => {
-   const footerTop = footer.getBoundingClientRect().top
-   const windowHeight = window.innerHeight;
-
-   if(footerTop <= windowHeight) {
-     scrollBtn.classList.add("show");
-
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollBtn.classList.add("show");
     } else {
-     scrollBtn.classList.remove("show");  
-   }
+      scrollBtn.classList.remove("show");
+    }
   });
-
 
   scrollBtn.addEventListener("click", () => {
-
-    window.scrollTo({
+    document.documentElement.scrollTo({
       top: 0,
-      behavior: "smooth"
-    }); 
+      behavior: "smooth",
+    });
   });
- 
+});
