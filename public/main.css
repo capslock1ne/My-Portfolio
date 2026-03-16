@@ -287,7 +287,7 @@
             .typing-effect{
                 
                     position: relative;
-                    margin-top: -50rem;
+                    margin-top: -48rem;
                 }
 
                 .typing-text::after {
@@ -354,7 +354,7 @@
             gap: 1rem;
             top: 0;
             right: 0;   
-            margin-top: 34rem;
+            margin-top: 33.5rem;
             margin-right: 40rem;
             z-index: 5;
             overflow: visible;
