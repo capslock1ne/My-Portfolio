@@ -116,22 +116,23 @@ form.addEventListener("submit", async function (e) {
 
 
 
- 
-document.addEventListener("DOMContentLoaded", () => {
-  const scrollBtn = document.getElementById("scrollTopBtn");
+  document.addEventListener("DOMContentLoaded", function () {
+          var typed = new Typed(".typing-text", {
+            strings: ["Web Developer", "UI/UX Designer", "Problem Solver", "Tech Enthusiast"],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+          });
+        });
 
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      scrollBtn.classList.add("show");
-    } else {
-      scrollBtn.classList.remove("show");
-    }
-  });
+        AOS.init({
+          duration: 1000,
+          easing: 'ease-in-out',
+          once: true,
+        });
 
-  scrollBtn.addEventListener("click", () => {
-    document.documentElement.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  });
-});
+
+
+document.getElementById("scrollTopBtn").onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};

@@ -3252,23 +3252,20 @@ textarea:focus {
 
 #scrollTopBtn {
   position: fixed;
-  bottom: 24px;
-  right: 24px;
-  width: 48px;
-  height: 48px;
+  bottom: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  background: black;
+  color: white;
+  text-decoration: none;
   border-radius: 50%;
-  border: none;
-  background: #000;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
   z-index: 999;
-  
+  cursor: pointer;
 }
 
 #scrollTopBtn.show {
