@@ -3216,6 +3216,29 @@ textarea:focus {
   }
 
 
+  @media (min-width: 1280px) { 
+  
+
+    .left-content-container{
+        margin-left: -2rem !important;
+        margin-top: -2rem !important;
+    }
+
+    .right-content{
+        right: -2% !important;
+    }
+
+    .typing-effect{
+        top: 25% !important;
+    }
+
+    .icons-container{
+         left: 60% !important;
+         top: -7.5% !important;
+    }
+
+  }
+
 
 .pops-up-msg-container{
     display: flex;
@@ -3266,7 +3289,7 @@ textarea:focus {
   font-size: 22px;
   z-index: 999;
   cursor: pointer;
-}
+}   
 
 #scrollTopBtn.show {
   opacity: 1;
