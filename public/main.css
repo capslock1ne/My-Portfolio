@@ -3173,53 +3173,21 @@ textarea:focus {
 
 }
 
-  @media (min-width: 1024px) and (max-width: 1440px) {
- 
-    .about-hero-image-more {
-        margin-left: 2rem !important;
-       
-    }
-
-    .about-right-container-more{
-        margin-left: -20rem !important;
-        padding-left: 2rem !important;
-    }
-
-    .description-more{
-        padding: 5rem !important;
-        transform: translateX(-5%) !important;
-        margin-top: -5rem !important;
-
-    }
-
-    .about-left-container-more{
-         margin-left: -10rem !important;
-    }
-    .abt-title-more{
-        margin-left: 8rem !important;
-        margin-top: -2.8rem !important;
-    }
-    .about-icon-more{
-        padding-left: 8rem !important;
-    }
-
-    .contacts{
-        margin-right: 5rem !important;
-        margin-top: -2rem !important;
-        height: 200px !important;
-        width: 350px !important;
-    }
-     
-    .side-icons-container{
-        margin-left: -18rem !important;
-    }
-  }
 
 
-  @media (min-width: 1280px) { 
-  
 
-    .left-content-container{
+@media  (max-width: 1600px) {
+
+
+    .navbar-nav{
+        margin-top: -1rem !important;
+    }
+
+    .contact-btn{
+        margin-top: -3rem !important;
+    }
+
+       .left-content-container{
         margin-left: -2rem !important;
         margin-top: -2rem !important;
     }
@@ -3230,14 +3198,141 @@ textarea:focus {
 
     .typing-effect{
         top: 25% !important;
-    }
+    }       
 
     .icons-container{
          left: 60% !important;
          top: -7.5% !important;
     }
 
-  }
+    .about-section-more{
+        padding: 5rem 5rem 10rem !important;
+    }
+    .side-icons-container{
+        margin: 10rem 2rem !important;
+    }
+
+    .vertical-more{
+        top: -70px !important;
+    }
+
+    .icons {
+      font-size: 1.2rem !important;
+    }
+
+     .skills-section{
+        height: 160vh !important;
+       padding: 12rem 5rem 20rem !important;
+     }
+
+      .service-title{
+        margin-top: 5rem !important;
+      }
+
+      
+
+      .skills-container{
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 3rem 2rem 1rem !important;
+        margin-top: 20rem !important;
+        
+      }
+
+     
+
+       .services {
+       margin-bottom: 5rem !important;
+      }
+
+      .service-box {
+        max-width: 300px !important;
+        flex: 1 1 250px !important;
+        padding: 2rem !important;
+         transform: translateY(-30%) !important;
+
+       }
+
+       
+
+     .box-container .skill-icon{
+        width: auto !important;
+        height: 20px !important;
+      }
+
+      .projects-section .container{
+        padding: 5rem 5rem 10rem !important;
+      }
+
+      .education-section{
+        padding: 5rem 5rem 10rem !important;
+      }
+
+      .education-icon {
+        width: auto !important;
+        height: 300px !important;
+        margin-top: -15rem !important;
+      }
+
+      .header-title{
+        margin-bottom: -22rem !important;
+      }
+
+       .header-title h1{
+        margin-top: -8rem !important;
+       }
+
+      .underline{
+         margin-top: -15rem !important;
+      }
+
+
+      .educational-contents{
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 3rem 2rem 1rem !important;
+        margin-top: 8rem !important;
+      }
+
+
+      .card-more{
+        margin-top: 8rem !important;
+      }
+
+
+      .message-form{
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        padding: 3rem 2rem 1rem !important;
+        margin-top: 8rem !important;
+      }
+
+      .msg-title{
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 auto !important;
+      }
+      .form-container{
+        display: flex; 
+        align-items: center !important;
+        justify-content: center !important;
+        transform: translateX(0) !important;
+        margin-top: -2rem !important;
+      }
+
+      
+
+   
+
+   
+
+}
+
 
 
 .pops-up-msg-container{
