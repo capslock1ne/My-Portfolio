@@ -136,3 +136,41 @@ form.addEventListener("submit", async function (e) {
 document.getElementById("scrollTopBtn").onclick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+
+const menuOpen = document.getElementById("menuOpen");
+const menuClose = document.getElementById("menuClose");
+const navbarNav = document.getElementById("navbarNav");
+const sidebarOverlay = document.getElementById("sidebarOverlay");
+
+function openMenu() {
+  navbarNav.classList.add("show");
+  sidebarOverlay.classList.add("show");
+  document.body.classList.add("sidebar-open");
+
+  menuOpen.setAttribute("aria-expanded", "true");
+}
+
+function closeMenu() {
+  navbarNav.classList.remove("show");
+  sidebarOverlay.classList.remove("show");
+  document.body.classList.remove("sidebar-open");
+
+  menuOpen.setAttribute("aria-expanded", "false");
+}
+
+menuOpen.addEventListener("click", openMenu);
+menuClose.addEventListener("click", closeMenu);
+sidebarOverlay.addEventListener("click", closeMenu);
+
+// Close when clicking a navigation link
+navbarNav.querySelectorAll(".nav-link, .sidebar-contact a").forEach(link => {
+  link.addEventListener("click", closeMenu);
+});
+
+// Close with Escape key
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    closeMenu();
+  }
+});

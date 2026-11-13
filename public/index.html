@@ -46,41 +46,81 @@
           </a>
         </div>
 
-          <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
+             <nav class="navbar navbar-expand-lg navbar-dark">
+              <div class="container-fluid">
 
-              <!-- Hamburger Button -->
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+                <!-- Hamburger Button -->
+                <button class="hamburger"
+                  id="menuOpen"
+                  type="button"
+                  aria-label="Open navigation"
+                  aria-controls="navbarNav"
+                  aria-expanded="false">
 
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">HOME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#aboutmore">ABOUT ME</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#skills">SKILLS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#projects">PROJECTS</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#education">EDUCATION</a>
-                  </li>
-                </ul>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </button>
+
+                <!-- Dark Overlay -->
+                <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+                <!-- Mobile Sidebar / Desktop Navigation -->
+                <div class="navbar-collapse" id="navbarNav">
+
+                  <!-- Sidebar Header -->
+                  <div class="sidebar-header">
+                    <span class="sidebar-title">MENU</span>
+
+                    <button class="sidebar-close"
+                      id="menuClose"
+                      type="button"
+                      aria-label="Close navigation">
+                      &times;
+                    </button>
+                  </div>
+
+                  <!-- Navigation Links -->
+                  <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                      <a class="nav-link active" href="./index.html">HOME</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#aboutmore">ABOUT ME</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills">SKILLS</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#projects">PROJECTS</a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#education">EDUCATION</a>
+                    </li>
+
+                  </ul>
+
+                  <!-- Sidebar Contact Button -->
+                  <div class="sidebar-contact">
+                    <a href="#message">Contact Me</a>
+                  </div>
+
+                </div>
+
+                <!-- Desktop Contact Button -->
+                <div class="contact-btn">
+                  <a href="#message">
+                    <button type="button">Contact</button>
+                  </a>
+                </div>
+
               </div>
-            </div>
-
-            <div class="contact-btn">
-              <a href="#message"><button>Contact</button></a> 
-            </div>
-
-          </nav>
+            </nav>
         </header>
 
         <section class="home-section" id="home">
